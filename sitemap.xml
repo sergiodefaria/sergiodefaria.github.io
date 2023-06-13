@@ -2,16 +2,20 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://sergiodefaria.github.io/</loc><lastmod>2023-05-02T23:46:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/posts/</loc><lastmod>2023-05-02T23:46:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/x123/</loc><lastmod>2023-05-02T23:46:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/x3/</loc><lastmod>2023-05-02T17:18:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/about/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/pages/about/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/me/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/pages/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/blog/</loc><lastmod>2023-04-28T16:26:50&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/hello/</loc><lastmod>2023-04-28T16:26:50&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/hello_world/</loc><lastmod>2023-04-28T16:26:50&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>https://sergiodefaria.github.io/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/categories/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/development/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/pages/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/x3/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/categories/x3/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/pages/x3developmentmodes/</loc><lastmod>2023-05-08T12:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/posts/</loc><lastmod>2023-05-02T23:46:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/x123/</loc><lastmod>2023-05-02T23:46:13&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/x3/</loc><lastmod>2023-05-02T17:18:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/about/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/pages/about/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/me/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/blog/</loc><lastmod>2023-04-28T16:26:50&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/hello/</loc><lastmod>2023-04-28T16:26:50&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://sergiodefaria.github.io/hello_world/</loc><lastmod>2023-04-28T16:26:50&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
