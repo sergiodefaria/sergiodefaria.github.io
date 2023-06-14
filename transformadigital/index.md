@@ -7,6 +7,8 @@ Olá, caros leitores!
 
 Sejam bem-vindos ao primeiro artigo de uma série de 10, na qual vamos explorar o emocionante mundo da transformação digital e como ela está moldando o futuro dos negócios. Hoje, mergulharemos nos fundamentos desse fenômeno e discutiremos a importância da transformação digital para as empresas modernas.
 
+{{< img src="images/test-image.jpg" alt="Teste image" >}}
+
 ## O que é Transformação Digital?
 
 A transformação digital é um processo contínuo de integração de tecnologias digitais em todas as áreas de uma organização, desde as operações internas até a interação com os clientes e parceiros. Essa jornada envolve a adoção estratégica de tecnologias emergentes, como inteligência artificial, análise de dados, automação de processos, nuvem computacional e Internet das Coisas (IoT), para melhorar a eficiência operacional, a experiência do cliente e impulsionar a inovação.
