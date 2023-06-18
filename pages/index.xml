@@ -8,17 +8,7 @@
     <language>en</language>
     <managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
     <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster>
-    <lastBuildDate>Mon, 08 May 2023 12:27:54 +0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>X3DevelopmentModes</title>
-      <link>https://sergiodefaria.github.io/pages/x3developmentmodes/</link>
-      <pubDate>Mon, 08 May 2023 12:27:54 +0100</pubDate>
-      <author>henrique@aferir.com (S. Henrique de Faria)</author>
-      <guid>https://sergiodefaria.github.io/pages/x3developmentmodes/</guid>
-      <description>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
-Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural Modo apenas-leitura - Para apresenção de dados de representações e classes, não permite modificação de dados Modo nativo - Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7 Modo intermédio - É um modo hibrído, que mistura o modo clássico com o modo nativo </description>
-    </item>
-    
+    <lastBuildDate>Fri, 28 Apr 2023 16:27:12 +0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://sergiodefaria.github.io/pages/about/</link>

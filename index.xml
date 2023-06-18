@@ -4,37 +4,44 @@
         <link>https://sergiodefaria.github.io/</link>
         <description>O meu blog sobre tecnologia e informática</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 13 Jun 2023 20:30:57 &#43;0100</lastBuildDate>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Thu, 15 Jun 2023 22:55:00 &#43;0100</lastBuildDate>
             <atom:link href="https://sergiodefaria.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Transformação Digital</title>
-    <link>https://sergiodefaria.github.io/transformadigital/</link>
+    <title>Compreendendo a Transição Digital</title>
+    <link>https://sergiodefaria.github.io/compreendendo-a-transiccao-digital/</link>
+    <pubDate>Thu, 15 Jun 2023 22:55:00 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/compreendendo-a-transiccao-digital/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/compreendendo-a-transiccao-digital/Compreendendo.jpg" referrerpolicy="no-referrer">
+            </div>A transição digital é um processo complexo e abrangente que envolve a adoção de tecnologias digitais e a transformação de processos, operações e modelos de negócios para se adaptar a um mundo cada vez mais digitalizado. Para que essa transição seja bem-sucedida, é essencial compreender e aplicar alguns princípios-base que podem impulsionar esse processo. Neste artigo, exploraremos os princípios da curiosidade, persistência e análise de perspectivas e como eles podem contribuir para uma transição digital eficaz.]]></description>
+</item><item>
+    <title>O Paradoxo da Transição Digital</title>
+    <link>https://sergiodefaria.github.io/o-paradoxo-da-transicao-digital/</link>
+    <pubDate>Wed, 14 Jun 2023 21:24:03 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/o-paradoxo-da-transicao-digital/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/o-paradoxo-da-transicao-digital/Paradoxo.jpg" referrerpolicy="no-referrer">
+            </div>A transição digital é um processo que traz consigo grandes expectativas de transformação e crescimento para as organizações. No entanto, muitos CEOs e líderes empresariais têm expressado insatisfação com os esforços de transição digital nas suas organizações. Esse paradoxo entre as oportunidades prometidas pela transição digital e a realidade da sua implementação pode ser atribuído a diversos fatores. Neste artigo, exploraremos as razões por trás dessa insatisfação e discutiremos como superar o paradoxo e impulsionar uma transição digital bem-sucedida.]]></description>
+</item><item>
+    <title>Introdução à Transição Digital: O Impacto da Tecnologia na Sociedade</title>
+    <link>https://sergiodefaria.github.io/introducaotransicaodigital/</link>
     <pubDate>Tue, 13 Jun 2023 20:30:57 &#43;0100</pubDate><author>
         <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/transformadigital/</guid>
-    <description><![CDATA[Transformação Digital: Impulsionando o FuturoOlá, caros leitores!
-Sejam bem-vindos ao primeiro artigo de uma série de 10, na qual vamos explorar o emocionante mundo da transformação digital e como ela está moldando o futuro dos negócios. Hoje, mergulharemos nos fundamentos desse fenômeno e discutiremos a importância da transformação digital para as empresas modernas.
-O que é Transformação Digital?A transformação digital é um processo contínuo de integração de tecnologias digitais em todas as áreas de uma organização, desde as operações internas até a interação com os clientes e parceiros.]]></description>
+    </author><guid>https://sergiodefaria.github.io/introducaotransicaodigital/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/introducaotransicaodigital/TransiccaoDigital.jpg" referrerpolicy="no-referrer">
+            </div>IntroduçãoVivemos numa era em que a tecnologia está em constante evolução e tem um impacto profundo em todos os aspectos da nossa vida. A transição digital, que se refere à adoção generalizada de tecnologias digitais e à transformação resultante nos processos, serviços e comportamentos da sociedade, está a moldar o nosso mundo de maneiras sem precedentes. Neste artigo, exploraremos o conceito de transição digital, o seu significado e como ela está afetando diversos setores da sociedade.]]></description>
 </item><item>
-    <title>X123</title>
-    <link>https://sergiodefaria.github.io/x123/</link>
-    <pubDate>Tue, 02 May 2023 23:46:13 &#43;0100</pubDate><author>
+    <title>Modos de desenvolvimento</title>
+    <link>https://sergiodefaria.github.io/x3developmentmodes/</link>
+    <pubDate>Mon, 08 May 2023 12:27:54 &#43;0100</pubDate><author>
         <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/x123/</guid>
-    <description><![CDATA[pqpfdp FCP FCP FCP ]]></description>
-</item><item>
-    <title>X3</title>
-    <link>https://sergiodefaria.github.io/x3/</link>
-    <pubDate>Tue, 02 May 2023 17:18:00 &#43;0100</pubDate><author>
-        <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/x3/</guid>
-    <description><![CDATA[Olá vamos lá começar]]></description>
-</item><item>
-    <title>Hello_world</title>
-    <link>https://sergiodefaria.github.io/hello_world/</link>
-    <pubDate>Fri, 28 Apr 2023 16:26:50 &#43;0100</pubDate><author>
-        <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/hello_world/</guid>
-    <description><![CDATA[]]></description>
+    </author><guid>https://sergiodefaria.github.io/x3developmentmodes/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
+Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural Modo apenas-leitura - Para apresenção de dados de representações e classes, não permite modificação de dados Modo nativo - Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7 Modo intermédio - É um modo hibrído, que mistura o modo clássico com o modo nativo ]]></description>
 </item></channel>
 </rss>
