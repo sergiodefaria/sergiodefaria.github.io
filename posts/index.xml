@@ -4,7 +4,18 @@
         <link>https://sergiodefaria.github.io/posts/</link>
         <description>All Posts | Aferir - Tecnologias</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Sun, 18 Jun 2023 22:00:00 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Mon, 19 Jun 2023 13:44:00 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Cibersegurança - Introdução</title>
+    <link>https://sergiodefaria.github.io/introducao-cyberseguranca/</link>
+    <pubDate>Mon, 19 Jun 2023 13:44:00 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/introducao-cyberseguranca/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/introducao-cyberseguranca/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Foto 1
+A rede tecnológica em que vivemos é muito mais do que apenas dispositivos e sistemas automatizados. Ela é composta por seres humanos, e é o fator humano que realmente importa. Quando se trata de cibersegurança, é crucial reconhecer que todos desempenham um papel fundamental na proteção da nossa infraestrutura digital.
+Ter uma cultura de cibersegurança significa transformar o conhecimento em práticas e comportamentos diários, independentemente do ambiente em que nos encontramos.]]></description>
+</item><item>
     <title>Geração de Valor na Transição Digital</title>
     <link>https://sergiodefaria.github.io/geracao-de-valor-na-transicao-digital/</link>
     <pubDate>Sun, 18 Jun 2023 22:00:00 &#43;0100</pubDate><author>
