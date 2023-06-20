@@ -4,9 +4,19 @@
         <link>https://sergiodefaria.github.io/</link>
         <description>O meu blog sobre tecnologia e informática</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Mon, 19 Jun 2023 13:44:00 &#43;0100</lastBuildDate>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 20 Jun 2023 17:20:54 &#43;0100</lastBuildDate>
             <atom:link href="https://sergiodefaria.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Arquitectura e interface do utilizador</title>
+    <link>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</link>
+    <pubDate>Tue, 20 Jun 2023 17:20:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/02-arquitectura-e-interface-do-utilizador/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Arquitetura Geral do Sage X3O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável.
+Este artigo fornece uma visão da arquitetura geral do Sage X3 e discute as várias camadas que criam a base do software.]]></description>
+</item><item>
     <title>Cibersegurança - Introdução</title>
     <link>https://sergiodefaria.github.io/introducao-cyberseguranca/</link>
     <pubDate>Mon, 19 Jun 2023 13:44:00 &#43;0100</pubDate><author>
@@ -64,12 +74,12 @@ Definição da Transição DigitalA transição digital envolve a integração d
             </div>IntroduçãoVivemos numa era em que a tecnologia está em constante evolução e tem um impacto profundo em todos os aspectos da nossa vida. A transição digital, que se refere à adoção generalizada de tecnologias digitais e à transformação resultante nos processos, serviços e comportamentos da sociedade, está a moldar o nosso mundo de maneiras sem precedentes. Neste artigo, exploraremos o conceito de transição digital, o seu significado e como ela está afetando diversos setores da sociedade.]]></description>
 </item><item>
     <title>Modos de desenvolvimento</title>
-    <link>https://sergiodefaria.github.io/x3developmentmodes/</link>
+    <link>https://sergiodefaria.github.io/01-x3developmentmodes/</link>
     <pubDate>Mon, 08 May 2023 12:27:54 &#43;0100</pubDate><author>
         <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/x3developmentmodes/</guid>
+    </author><guid>https://sergiodefaria.github.io/01-x3developmentmodes/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
+                <img src="/01-x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
             </div>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
 Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
 No modo Clássico, o Sage X3 é baseado em funções.

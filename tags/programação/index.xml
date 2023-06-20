@@ -4,14 +4,24 @@
         <link>https://sergiodefaria.github.io/tags/programa%C3%A7%C3%A3o/</link>
         <description>Programação - Tag - Aferir - Tecnologias</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Mon, 08 May 2023 12:27:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/tags/programa%C3%A7%C3%A3o/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 20 Jun 2023 17:20:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/tags/programa%C3%A7%C3%A3o/" rel="self" type="application/rss+xml" /><item>
+    <title>Arquitectura e interface do utilizador</title>
+    <link>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</link>
+    <pubDate>Tue, 20 Jun 2023 17:20:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/02-arquitectura-e-interface-do-utilizador/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Arquitetura Geral do Sage X3O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável.
+Este artigo fornece uma visão da arquitetura geral do Sage X3 e discute as várias camadas que criam a base do software.]]></description>
+</item><item>
     <title>Modos de desenvolvimento</title>
-    <link>https://sergiodefaria.github.io/x3developmentmodes/</link>
+    <link>https://sergiodefaria.github.io/01-x3developmentmodes/</link>
     <pubDate>Mon, 08 May 2023 12:27:54 &#43;0100</pubDate><author>
         <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/x3developmentmodes/</guid>
+    </author><guid>https://sergiodefaria.github.io/01-x3developmentmodes/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
+                <img src="/01-x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
             </div>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
 Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
 No modo Clássico, o Sage X3 é baseado em funções.

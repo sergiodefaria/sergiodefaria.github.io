@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Arquitectura e interface do utilizador - Aferir - Tecnologias</title><meta name="Description" content="O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável."><meta property="og:title" content="Arquitectura e interface do utilizador" />
+<meta property="og:description" content="O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" /><meta property="og:image" content="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-20T17:20:54+01:00" />
+<meta property="article:modified_time" content="2023-06-20T17:20:54+01:00" /><meta property="og:site_name" content="Aferir.pt" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/featured-image.jpg"/>
+<meta name="twitter:title" content="Arquitectura e interface do utilizador"/>
+<meta name="twitter:description" content="O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável."/>
+<meta name="application-name" content="Aferir tecnologia">
+<meta name="apple-mobile-web-app-title" content="Aferir tecnologia">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" /><link rel="prev" href="https://sergiodefaria.github.io/introducao-cyberseguranca/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Arquitectura e interface do utilizador",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sergiodefaria.github.io\/02-arquitectura-e-interface-do-utilizador\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/sergiodefaria.github.io\/02-arquitectura-e-interface-do-utilizador\/featured-image.jpg",
+                            "width":  1280 ,
+                            "height":  720 
+                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  1132 ,
+        "url": "https:\/\/sergiodefaria.github.io\/02-arquitectura-e-interface-do-utilizador\/","datePublished": "2023-06-20T17:20:54+01:00","dateModified": "2023-06-20T17:20:54+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "S. Henrique de Faria"
+            },"description": "O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável."
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="desktop-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blog </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="mobile-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Blog</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#arquitetura-geral">Arquitetura geral</a>
+      <ul>
+        <li><a href="#cliente-baseado-na-web">Cliente baseado na web</a></li>
+        <li><a href="#servidor-web">Servidor web</a></li>
+        <li><a href="#navegadores-web-suportados">Navegadores web suportados</a></li>
+        <li><a href="#dispositivos-móveis-suportados">Dispositivos móveis suportados</a></li>
+      </ul>
+    </li>
+    <li><a href="#arquitetura-da-aplicação">Arquitetura da aplicação</a>
+      <ul>
+        <li><a href="#camada-de-código-da-aplicação">Camada de código da aplicação</a></li>
+        <li><a href="#camada-do-supervisor">Camada do Supervisor:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Arquitectura e interface do utilizador</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">S. Henrique de Faria</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sage-x3-programa%C3%A7%C3%A3o/"><i class="far fa-folder fa-fw"></i>Sage X3 - Programação</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="20/06/2023">20/06/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="20/06/2023">20/06/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1132 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/02-arquitectura-e-interface-do-utilizador/featured-image.jpg"
+        srcset="/02-arquitectura-e-interface-do-utilizador/featured-image.jpg, /02-arquitectura-e-interface-do-utilizador/featured-image.jpg 1.5x, /02-arquitectura-e-interface-do-utilizador/featured-image.jpg 2x"
+        sizes="auto"
+        alt="O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável."
+        title="O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável." height="720"   width="1280" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#arquitetura-geral">Arquitetura geral</a>
+      <ul>
+        <li><a href="#cliente-baseado-na-web">Cliente baseado na web</a></li>
+        <li><a href="#servidor-web">Servidor web</a></li>
+        <li><a href="#navegadores-web-suportados">Navegadores web suportados</a></li>
+        <li><a href="#dispositivos-móveis-suportados">Dispositivos móveis suportados</a></li>
+      </ul>
+    </li>
+    <li><a href="#arquitetura-da-aplicação">Arquitetura da aplicação</a>
+      <ul>
+        <li><a href="#camada-de-código-da-aplicação">Camada de código da aplicação</a></li>
+        <li><a href="#camada-do-supervisor">Camada do Supervisor:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="arquitetura-geral-do-sage-x3" class="headerLink">
+    <a href="#arquitetura-geral-do-sage-x3" class="header-mark"></a>Arquitetura Geral do Sage X3</h1><p>O Sage X3 é um software de planeamento de recursos empresariais (ERP) que ajuda as empresas a gerir vários aspetos das suas operações, incluindo finanças, distribuição, fabrico e muito mais. A arquitetura geral do Sage X3 consiste em várias camadas que trabalham em conjunto para fornecer uma solução de software robusta e escalável.</p>
+<p>Este artigo fornece uma visão da arquitetura geral do Sage X3 e discute as várias camadas que criam a base do software. Isso inclui a camada de código de aplicação utilizada para desenvolver e gerir o software, uma visão geral dos elementos da interface de utilizador comum e do processo geral de desenvolvimento.
+Os tópicos deste artigo são:</p>
+<ul>
+<li>Arquitetura geral</li>
+<li>Arquitetura da aplicação</li>
+<li>Processo geral de desenvolvimento</li>
+</ul>
+<h2 id="arquitetura-geral" class="headerLink">
+    <a href="#arquitetura-geral" class="header-mark"></a>Arquitetura geral</h2><p>O Sage X3 pode gerir o processamento de dados em vários servidores. O diagrama a seguir representa o modelo básico de arquitetura para o Sage X3. Esse modelo pode ser alterado de acordo com as necessidades de cada empresa.
+
+
+
+<img src="/images/x3architecture_hufca620b3dec5eee7e982ea26142f1224_440090_1000x0_resize_box_3.png" alt="" ></p>
+<p>O Sage X3 consiste em vários elementos de servidor, que podem ser instalados num só servidor, podem ser servidores separados ou uma combinação de servidores. Por exemplo, além dos servidores de aplicação e de base de dados, é possível ter um servidor web, um servidor de impressão, etc.</p>
+<p>O Sage X3 foi projetado para utilizar clientes e servidor web. O acesso ao Sage X3 não requer a instalação de um cliente específico, uma vez que é feito por um navegador de Internet.</p>
+<h3 id="cliente-baseado-na-web" class="headerLink">
+    <a href="#cliente-baseado-na-web" class="header-mark"></a>Cliente baseado na web</h3><ul>
+<li>Conecção ao Sage X3 através da generalidade dos navegadores web mais utilizados ex. Chrome, Firefox, Edge, Opera, Safari,&hellip;
+<ul>
+<li>Não há necessidade de um cliente pesado dedicado</li>
+</ul>
+</li>
+<li>Permite uma conectividade mais fácil com o Sage X3 através de smartphones e tablets</li>
+<li>Utilização das funcionalidades da web
+<ul>
+<li>Favoritos / Histórico / Separadores / Navegação</li>
+<li>Uso de links para navegar pelo sistema.</li>
+</ul>
+</li>
+</ul>
+<h3 id="servidor-web" class="headerLink">
+    <a href="#servidor-web" class="header-mark"></a>Servidor web</h3><p>Existe também um novo servidor web para substituir a versão anterior do servidor web:</p>
+<ul>
+<li>
+<p>O servidor web é um servidor http</p>
+<ul>
+<li>Assíncrono, muito rápido, baseado em node.js (em vez do anterior Apache)</li>
+<li>Funciona com URL e envia de volta para o cliente feeds JSON que são SData normalizados</li>
+<li>O supervisor e o motor do X3 enviam os mesmos feeds SData</li>
+<li>Cada página tem sua própria URL</li>
+</ul>
+</li>
+<li>
+<p>O protocolo X3 funciona no modo &ldquo;Web completo&rdquo; em 2 modos diferentes:</p>
+<ul>
+<li>Sem estado (consulta, exibição detalhada de qualquer página): sem bloqueio, nenhum contexto salvo</li>
+<li>Com estado (quando uma modificação está em andamento): um rascunho existe no lado web, uma cópia de trabalho existe no servidor, ambas trocam assincronamente as modificações feitas</li>
+</ul>
+</li>
+<li>
+<p>Quando uma página (um serviço) é solicitada:</p>
+<ul>
+<li>O supervisor envia primeiro um protótipo (definição de metadados) para construir a interface do utilizador</li>
+<li>Os dados são enviados numa segunda etapa</li>
+</ul>
+</li>
+</ul>
+<h3 id="navegadores-web-suportados" class="headerLink">
+    <a href="#navegadores-web-suportados" class="header-mark"></a>Navegadores web suportados</h3><ul>
+<li>
+<p>A interface web permite que a utilização de qualquer um dos seguintes navegadores web:</p>
+<ul>
+<li>Internet Explorer</li>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Safari</li>
+<li>Opera</li>
+</ul>
+</li>
+<li>
+<p>Permite o acesso às funções web:</p>
+<ul>
+<li>Histórico, Favoritos, Separadores, que são gerenciados automaticamente pelo navegador.</li>
+<li>Capacidade offline.</li>
+<li>Links interativos e contextuais em vez de botões.</li>
+</ul>
+</li>
+</ul>
+<h3 id="dispositivos-móveis-suportados" class="headerLink">
+    <a href="#dispositivos-m%c3%b3veis-suportados" class="header-mark"></a>Dispositivos móveis suportados</h3><ul>
+<li>Permite o uso de smartphones e tablets:
+<ul>
+<li>IPhone, Ipad</li>
+<li>Android</li>
+</ul>
+</li>
+</ul>
+<h2 id="arquitetura-da-aplicação" class="headerLink">
+    <a href="#arquitetura-da-aplica%c3%a7%c3%a3o" class="header-mark"></a>Arquitetura da aplicação</h2><p>A arquitetura do Sage X3 está organizada em camadas para que a gestão de dados, a execução de processos e a apresentação de informações sejam tratadas de forma independente. Essa arquitetura de vários níveis garante operações do sistema altamente confiáveis em todas as circunstâncias. A arquitetura da aplicação do Sage X3 é composta pelas seguintes camadas: Código da aplicação, Supervisor, Motor X3, Base de dados e Sistema operativo.</p>
+
+
+
+<img src="/images/x3ApplicationArchitecture_huf39eba579c5e377558b7fedfd850bf61_159914_1000x0_resize_box_3.png" alt="" >
+<h3 id="camada-de-código-da-aplicação" class="headerLink">
+    <a href="#camada-de-c%c3%b3digo-da-aplica%c3%a7%c3%a3o" class="header-mark"></a>Camada de código da aplicação</h3><p>Esta série de artigos vão-se focar principalmente na camada de código da aplicação, que lida com a lógica de negócio, processos standard, processos verticais e processos específicos. A separação desses processos permite personalizar o sistema e desenvolver rotinas específicas da empresa, ao mesmo tempo em que mantém o código específico ou personalizado seguro em relação a futuras atualizações de versões.</p>
+<blockquote>
+<p><strong>Código da aplicação</strong></p>
+<blockquote>
+<ul>
+<li>Lógica de negócio</li>
+<li>Processos Standard (SUB*, TRT*, CNS*)</li>
+<li>Processos Verticais (SPV*, X*)</li>
+<li>Processos Específicos (SPE*, Y*, Z*)</li>
+</ul>
+</blockquote>
+</blockquote>
+<ul>
+<li>
+<p>O código da aplicação é atualizado a partir do próprio Sage X3. Essas atualizações referem-se à lógica de negócio contida no Sage X3, como encomendas de venda, encomendas de compra e faturação. (Isso difere da atualização da plataforma, que envolve a Consola Sage X3 e afeta a arquitetura geral da solução Sage X3 a nível de componente.)</p>
+</li>
+<li>
+<p>O nível de atualização do código da aplicação geralmente é independente dos níveis de atualização da plataforma.
+A camada de código da aplicação é onde escrevemos o nosso código. É também onde o sistema básico e a interface do utilizador são escritos.</p>
+</li>
+<li>
+<p>Toda a lógica de negócio, como encomendas de venda, encomendas de compra, faturação e produção, ocorre na camada de código da aplicação.</p>
+</li>
+<li>
+<p>Quando se instala o Sage X3, existem processos padrão que vêm com o software.</p>
+</li>
+<li>
+<p>Os processos verticais (SPVs) modificam o Sage X3 para atender às necessidades de uma indústria ou legislação para vários clientes.</p>
+</li>
+<li>
+<p>Os processos específicos permitem que os parceiros Sage ou os clientes escrevam melhorias específicas que são exclusivas (ou &ldquo;específicas&rdquo;) para essa implementação.</p>
+</li>
+</ul>
+<h3 id="camada-do-supervisor" class="headerLink">
+    <a href="#camada-do-supervisor" class="header-mark"></a>Camada do Supervisor:</h3><p>A camada do supervisor é composta pelos seguintes elementos.</p>
+<blockquote>
+<p><strong>Supervisor</strong></p>
+<blockquote>
+<ul>
+<li>Base de Dados e Configuração</li>
+<li>Utilizadores e Direitos de Acesso</li>
+<li>Gestão de consultas de dados (Estatistícas, Listas, Acesso a Dados&hellip;)</li>
+<li>Parâmetros da aplicação</li>
+<li>Gestão de tarefas batch</li>
+<li>Gestão de versões e atualizações</li>
+<li>Plataforma de desenvolvimento para personalizações específicas</li>
+</ul>
+</blockquote>
+</blockquote>
+<ul>
+<li>
+<p>Esta é a camada que funciona abaixo da camada de código da aplicação e é onde ocorre a configuração da bade de dados a partir do Sage X3 (não do Microsoft SQL Server ou Oracle).</p>
+</li>
+<li>
+<p>Os direitos de utilizador e acesso também são definidos nesta camada, assim como a gestão de pesquisa de dados, parâmetros da aplicação, gestão de tarefas batch, gestão de versões e atualizações, e plataforma de desenvolvimento para personalizações específicas.</p>
+</li>
+<li>
+<p>Várias questões de desenvolvimento são tratadas automaticamente pelo supervisor.</p>
+<ul>
+<li>Cabeçalhos e Linhas: O supervisor agora lida com isso internamente. Como desenvolvedores, não é necessário escrever código específico para lidar com cabeçalhos e linhas. Ele também permite ter vários conjuntos de linhas em relação a um cabeçalho (em vez de apenas um) e também a capacidade de ter sublinhas para as linhas.</li>
+</ul>
+</li>
+<li>
+<p>Fácil integração com sistemas externos</p>
+<ul>
+<li>Integração do Office: O novo cliente web gere a integração do Office por meio de um suplemento. O Office é visto como um cliente. Isso é uma grande mudança em relação à versão 6, porque agora o suplemento do Office conecta-se ao servidor web para obter os dados e usa o mesmo protocolo que o cliente web. Além disso, nenhum desenvolvimento precisa ser feito no servidor ou nos documentos do Office.</li>
+<li>Web Services: Fornece uma interface consistente para os dados, ou seja, não estará mais limitado aos objetos com os quais se deseja interagir.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 20/06/2023</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" data-title="Arquitectura e interface do utilizador" data-via="xxxx" data-hashtags="Sage X3,Programação"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" data-hashtag="Sage X3"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" data-title="Arquitectura e interface do utilizador"><span class="fab fa-hacker-news fa-fw"></span></button><button title="Share on Line" data-sharer="line" data-url="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" data-title="Arquitectura e interface do utilizador"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="Share on 微博" data-sharer="weibo" data-url="https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/" data-title="Arquitectura e interface do utilizador"><span class="fab fa-weibo fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sage-x3/">Sage X3</a>,&nbsp;<a href="/tags/programa%C3%A7%C3%A3o/">Programação</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/introducao-cyberseguranca/" class="prev" rel="prev" title="Cibersegurança - Introdução"><i class="fas fa-angle-left fa-fw"></i>Cibersegurança - Introdução</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">S. Henrique de Faria</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"tecnologia","mobile-header-typeit":"tecnologia"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Modos de desenvolvimento - Aferir - Tecnologias</title><meta name="Description" content="O meu blog sobre tecnologia e informática"><meta property="og:title" content="Modos de desenvolvimento" />
+<meta property="og:description" content="Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
+Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
+No modo Clássico, o Sage X3 é baseado em funções.
+As funções podem ser chamadas a partir de um item de menu e de outras funções. As funções servem como base para atribuição de direitos de acesso. As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sergiodefaria.github.io/01-x3developmentmodes/" /><meta property="og:image" content="https://sergiodefaria.github.io/01-x3developmentmodes/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-08T12:27:54+01:00" />
+<meta property="article:modified_time" content="2023-06-20T13:27:54+01:00" /><meta property="og:site_name" content="Aferir.pt" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sergiodefaria.github.io/01-x3developmentmodes/featured-image.jpg"/>
+<meta name="twitter:title" content="Modos de desenvolvimento"/>
+<meta name="twitter:description" content="Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
+Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
+No modo Clássico, o Sage X3 é baseado em funções.
+As funções podem ser chamadas a partir de um item de menu e de outras funções. As funções servem como base para atribuição de direitos de acesso. As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3)."/>
+<meta name="application-name" content="Aferir tecnologia">
+<meta name="apple-mobile-web-app-title" content="Aferir tecnologia">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://sergiodefaria.github.io/01-x3developmentmodes/" /><link rel="next" href="https://sergiodefaria.github.io/introducaotransicaodigital/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Modos de desenvolvimento",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sergiodefaria.github.io\/01-x3developmentmodes\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/sergiodefaria.github.io\/01-x3developmentmodes\/featured-image.jpg",
+                            "width":  640 ,
+                            "height":  427 
+                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  1744 ,
+        "url": "https:\/\/sergiodefaria.github.io\/01-x3developmentmodes\/","datePublished": "2023-05-08T12:27:54+01:00","dateModified": "2023-06-20T13:27:54+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "S. Henrique de Faria"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="desktop-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blog </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="mobile-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Blog</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#modos-de-desenvolvimento">Modos de Desenvolvimento</a>
+      <ul>
+        <li><a href="#modo-clássico">Modo Clássico</a>
+          <ul>
+            <li><a href="#organização-da-página-clássica">Organização da página Clássica</a></li>
+            <li><a href="#comportamento-principal-de-uma-página-no-modo-clássico">Comportamento principal de uma página no modo Clássico</a></li>
+            <li><a href="#gestão-de-páginas">Gestão de páginas</a></li>
+            <li><a href="#navegação-local">Navegação local</a></li>
+            <li><a href="#tempo-limite">Tempo limite:</a></li>
+            <li><a href="#organização-global-da-página-no-modo-clássico">Organização global da página no modo Clássico:</a></li>
+            <li><a href="#gestão-de-ecrãs-tipo-quadro-nas-páginas-do-modo-clássico">Gestão de ecrãs tipo quadro nas páginas do modo Clássico</a></li>
+          </ul>
+        </li>
+        <li><a href="#modo-apenas-leitura">Modo apenas-leitura</a></li>
+        <li><a href="#modo-nativo">Modo nativo</a></li>
+        <li><a href="#modo-intermédio">Modo intermédio</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Modos de desenvolvimento</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">S. Henrique de Faria</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sage-x3-programa%C3%A7%C3%A3o/"><i class="far fa-folder fa-fw"></i>Sage X3 - Programação</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="20/06/2023">20/06/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1744 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;9 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/01-x3developmentmodes/featured-image.jpg"
+        srcset="/01-x3developmentmodes/featured-image.jpg, /01-x3developmentmodes/featured-image.jpg 1.5x, /01-x3developmentmodes/featured-image.jpg 2x"
+        sizes="auto"
+        alt="/01-x3developmentmodes/featured-image.jpg"
+        title="/01-x3developmentmodes/featured-image.jpg" height="427"   width="640" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#modos-de-desenvolvimento">Modos de Desenvolvimento</a>
+      <ul>
+        <li><a href="#modo-clássico">Modo Clássico</a>
+          <ul>
+            <li><a href="#organização-da-página-clássica">Organização da página Clássica</a></li>
+            <li><a href="#comportamento-principal-de-uma-página-no-modo-clássico">Comportamento principal de uma página no modo Clássico</a></li>
+            <li><a href="#gestão-de-páginas">Gestão de páginas</a></li>
+            <li><a href="#navegação-local">Navegação local</a></li>
+            <li><a href="#tempo-limite">Tempo limite:</a></li>
+            <li><a href="#organização-global-da-página-no-modo-clássico">Organização global da página no modo Clássico:</a></li>
+            <li><a href="#gestão-de-ecrãs-tipo-quadro-nas-páginas-do-modo-clássico">Gestão de ecrãs tipo quadro nas páginas do modo Clássico</a></li>
+          </ul>
+        </li>
+        <li><a href="#modo-apenas-leitura">Modo apenas-leitura</a></li>
+        <li><a href="#modo-nativo">Modo nativo</a></li>
+        <li><a href="#modo-intermédio">Modo intermédio</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="desenvolvimento-sage-x3" class="headerLink">
+    <a href="#desenvolvimento-sage-x3" class="header-mark"></a>Desenvolvimento Sage X3</h1><h2 id="modos-de-desenvolvimento" class="headerLink">
+    <a href="#modos-de-desenvolvimento" class="header-mark"></a>Modos de Desenvolvimento</h2><p>Atualmente, existem 4 modos de desenvolvimento no Sage X3:</p>
+<h3 id="modo-clássico" class="headerLink">
+    <a href="#modo-cl%c3%a1ssico" class="header-mark"></a>Modo Clássico</h3><p>Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural</p>
+<p>No modo Clássico, o Sage X3 é baseado em funções.</p>
+<ul>
+<li>As funções podem ser chamadas a partir de um item de menu e de outras funções.</li>
+<li>As funções servem como base para atribuição de direitos de acesso.</li>
+<li>As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3).</li>
+</ul>
+<p>No <strong>Modo Clássico</strong>, as páginas são baseadas no design do cliente para Windows versão 6. Este modo é uma emulação da versão 6, que não requer nenhuma modificação no repositório da versão 6 para funcionar. Os elementos armazenados no dicionário de ecrãs, dicionário de ações, dicionário de janelas, assim como os scripts projetados para a versão 6 são usados neste modo.
+Os princípios básicos da ergonomia da versão 6 ainda estão presentes:</p>
+<ul>
+<li>A interface é controlada pelo servidor.</li>
+<li>Um controle de bloqueio de campo não pode ser ignorado e deve ser preenchido antes que outro campo possa ser preenchido.</li>
+<li>O controle é síncrono.</li>
+</ul>
+<p>Em baixo é apresentado um exemplo de uma página Clássica na <strong>versão 6</strong>, mostrando os elementos de navegação.
+
+
+
+<img src="/images/ScreenV6_hua192f37f18b31404425d07ea33177809_219229_1000x0_resize_box_3.png" alt="" ></p>
+<p>Em baixo é apresentado um exemplo de uma página Clássica na <strong>versão 12</strong>, mostrando os elementos de navegação.
+
+
+
+<img src="/images/Screenv12_hu996add9d6844e76b688ac0c98c5a9f8d_516262_1000x0_resize_box_3.png" alt="" ></p>
+<h4 id="organização-da-página-clássica" class="headerLink">
+    <a href="#organiza%c3%a7%c3%a3o-da-p%c3%a1gina-cl%c3%a1ssica" class="header-mark"></a>Organização da página Clássica</h4><ul>
+<li>Uma lista à esquerda (se aplicável) com várias caixas.</li>
+<li>Uma página central onde a informação é mostrada.</li>
+<li>Um painel à direita com links adicionais.</li>
+</ul>
+<p>A lista à esquerda é usada para seleção e operações de escolha. É possível filtrar na primeira linha da lista, inserindo valores que podem ser prefixados por um operador. O operador padrão utilizado é &ldquo;contendo&rdquo;.
+Os botões &ldquo;Anterior&rdquo; e &ldquo;Seguinte&rdquo; são utilizados para aceder à página anterior ou seguinte de registos numa lista.
+Podem existir vários painéis à esquerda, especialmente um painel de últimos registos lidos que lista os registos acedidos recentemente.
+A página central contém diferentes campos que são definidos pela aplicação.</p>
+<p>A transição de uma função existente para o modo Nativo pode levar um tempo significativo. Para garantir a disponibilidade de todas as funções Clássicas com o novo cliente via browser, mesmo que os desenvolvedores ou parceiros de negócios não tenham tido tempo para fazer a transição do código, o modo Clássico ainda está incorporado no ambiente mais recente, podendo ser utilizadas as funções existentes.</p>
+<p>Como a reorganização do código pode levar tempo e para simplificar a transição entre o desenvolvimento Clássico e o desenvolvimento Nativo, uma camada adicional de interface do utilizador chamada Transição foi desenvolvida para ambientes desde a versão 7.</p>
+<ul>
+<li>
+<p>Hospedada pelo servidor Web, essa camada suporta uma interface do utilizador envolta na estrutura do modo Nativo, mas com um estilo muito próximo ao do modo Nativo.</p>
+</li>
+<li>
+<p>Nesse modo, é estabelecida uma conexão entre o servidor Web e o motor X3 em condições equivalentes às existentes na versão 6. Além disso, o servidor do modo Nativo age como um simples proxy nesse caso.</p>
+</li>
+<li>
+<p>A transição de uma página do modo Nativo para um ecrã de fusão é relativamente transparente (o ecrã de Transição sobrepõe-se à página do modo Nativo), mas as funções avançadas não estão disponíveis.</p>
+</li>
+<li>
+<p>O cliente de transição, ainda em desenvolvimento, estará disponível em vários navegadores e será capaz de executar as ecrãs Clássicos sem qualquer reorganização de código.</p>
+<ul>
+<li>A autoria é limitada nesse modo.</li>
+<li>A interface móvel não está disponível nesse modo.</li>
+</ul>
+</li>
+<li>
+<p>Funciona com os seguintes princípios:</p>
+<ul>
+<li>
+<p>Num painel de controle, um item de menu pode referir-se a uma função Clássica pelo seu nome. Quando isso acontece, durante a execução, uma página é aberta mostrando o ecrã Clássico e usando o protocolo da versão 6 para se conectar ao servidor X3.</p>
+</li>
+<li>
+<p>A função Clássica chamada dessa maneira funciona com as mesmas características presentes na versão 6.</p>
+<ul>
+<li>Uma lista à esquerda está disponível.</li>
+<li>Os controles são bloqueantes e síncronos.</li>
+<li>O movimento do cursor é completamente controlado pelo servidor e não é possível fazer alterações nessas páginas.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>O visual do ecrã foi projetado para ser o mais próximo possível do visual das novas páginas do modo Nativo.</p>
+</li>
+<li>
+<p>O modo Clássico pode exigir apenas modificações mínimas no código existente da versão 6 para funcionar.</p>
+</li>
+</ul>
+<h4 id="comportamento-principal-de-uma-página-no-modo-clássico" class="headerLink">
+    <a href="#comportamento-principal-de-uma-p%c3%a1gina-no-modo-cl%c3%a1ssico" class="header-mark"></a>Comportamento principal de uma página no modo Clássico</h4><p>Os diferentes atalhos que existiam na versão 6 (como as teclas de função F2, F5, F6, F9, F11, F12&hellip;) foram substituídos por uma combinação da tecla ESC e a mesma tecla de função, pois as teclas de função são geridas pelos navegadores e podem ter usos diferentes dependendo do navegador.</p>
+<h4 id="gestão-de-páginas" class="headerLink">
+    <a href="#gest%c3%a3o-de-p%c3%a1ginas" class="header-mark"></a>Gestão de páginas</h4><p>Quando uma página no modo Clássico é aberta, é utilizada uma conexão do tipo v6 com um processo X3. Na primeira vez que isso ocorre, o tempo de conexão pode levar vários segundos (como acontecia com uma conexão v6).</p>
+<ul>
+<li>Fechar uma página no modo Clássico irá sair da função atual e perder quaisquer dados modificados. Será o mesmo se o botão de voltar for usado ou se outro URL for digitado. Se houver um trabalho pendente, aparecerá uma caixa de diálogo para solicitar uma confirmação.</li>
+</ul>
+<h4 id="navegação-local" class="headerLink">
+    <a href="#navega%c3%a7%c3%a3o-local" class="header-mark"></a>Navegação local</h4><p>Uma página no modo Clássico pode chamar outra página no modo Clássico (usando uma seleção, usando o atalho Esc+F7, chamando outra entidade - operação conhecida como &ldquo;tunel&rdquo; na terminologia da versão 6 - ou seguindo outro link). Quando isso acontece, uma nova página no Modo Clássico é empilhada sobre a anterior, e isso pode ser repetido. Um rastro de navegação aparece no topo da página.</p>
+<ul>
+<li>
+<p>Clicar no &ldquo;x&rdquo; presente apenas na última parte do rastro de navegação fechará a página e retornará à anterior (a operação de fechar terá o mesmo efeito).</p>
+</li>
+<li>
+<p>Também é possível abrir uma função que empilha uma página adicional com o link &ldquo;Ir para função&rdquo; (conforme mencionado acima). A página que é aberta é exatamente a mesma que a página exibida na versão 6 ao digitar a tecla F7.</p>
+</li>
+</ul>
+<h4 id="tempo-limite" class="headerLink">
+    <a href="#tempo-limite" class="header-mark"></a>Tempo limite:</h4><p>A sessão no Modo Clássico é gerida com o protocolo v6; portanto, é possível desconectar uma sessão após ocorrer um tempo limite. Quando isso acontece, é exibida uma janela de confirmação.</p>
+<ul>
+<li>Se o utilizador não responder &ldquo;Não&rdquo;, a página é fechada e é apresentado o portal do Modo Nativo. Uma barra azul localizada abaixo da barra principal fornece ao utilizador informações sobre a desconexão por tempo limite.</li>
+</ul>
+<h4 id="organização-global-da-página-no-modo-clássico" class="headerLink">
+    <a href="#organiza%c3%a7%c3%a3o-global-da-p%c3%a1gina-no-modo-cl%c3%a1ssico" class="header-mark"></a>Organização global da página no modo Clássico:</h4><ul>
+<li>
+<p>A organização de uma página no modo Clássico é a mesma que uma página na versão 6, exceto pelo fato de que os menus e botões estão localizados numa barra vertical do lado direito. Isso significa que encontraremos em tal página:</p>
+<ul>
+<li>Uma lista à esquerda (se aplicável) com várias caixas.</li>
+<li>Uma página central onde os dados estão localizados.</li>
+<li>Uma barra lateral direita com links adicionais.</li>
+<li>Os painéis esquerdo e direito podem ser ocultados para fornecer mais espaço aos dados da aplicação. Os ícones fecham o painel direito e esquerdo, mas o atalho direto ESC+F11 fecha ambos os painéis em uma única operação. Quando os painéis estão fechados, ESC+F11 reabre-os.</li>
+</ul>
+</li>
+</ul>
+<h4 id="gestão-de-ecrãs-tipo-quadro-nas-páginas-do-modo-clássico" class="headerLink">
+    <a href="#gest%c3%a3o-de-ecr%c3%a3s-tipo-quadro-nas-p%c3%a1ginas-do-modo-cl%c3%a1ssico" class="header-mark"></a>Gestão de ecrãs tipo quadro nas páginas do modo Clássico</h4><p>A gestão dos ecrãs tipo quadro funciona de forma diferente em relação à versão 6: deixou de haver foco intermédio numa linha antes de ter o foco numa célula. Portanto, um único clique leva diretamente ao modo de edição numa célula, não sendo mais necessário um clique duplo como na versão 6.</p>
+<ul>
+<li>Pressionar Esc em uma linha continua a sair da modificação da linha, e pressionar Enter em um campo na grade leva ao primeiro campo localizado após a grade.</li>
+</ul>
+<h3 id="modo-apenas-leitura" class="headerLink">
+    <a href="#modo-apenas-leitura" class="header-mark"></a>Modo apenas-leitura</h3><p>Para apresenção de dados de representações e classes, não permite modificação de dados</p>
+<h3 id="modo-nativo" class="headerLink">
+    <a href="#modo-nativo" class="header-mark"></a>Modo nativo</h3><p>Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7</p>
+<ul>
+<li>
+<p>Os metadados serão alterados no servidor:</p>
+<ul>
+<li>Um dicionário de representação substitui janelas e ecrãs.</li>
+<li>O modelo de objeto/consulta/procedimento em lote será alterado.</li>
+<li>A lógica de negócios está associada a classes (métodos).</li>
+<li>O supervisor e o mecanismo lidam com feeds Sdata e JSON.</li>
+</ul>
+</li>
+<li>
+<p>A lógica de negócios e o código associado à interface do utilizador precisam ser separados:</p>
+<ul>
+<li><strong>Objetivo:</strong> ser capaz de executar qualquer função como um serviço.</li>
+<li><strong>Vantagens:</strong> deixa de hacer dificuldades em ter de lidar com webservices e lógica de importação/exportação.</li>
+</ul>
+</li>
+<li>
+<p>O supervisor levará em consideração as operações de CRUD:</p>
+<ul>
+<li>No cabeçalho e nas linhas (com base no UUID).</li>
+</ul>
+</li>
+<li>
+<p>Inicialmente, toda a administração (utilizadores etc.), e apenas alguns recursos do supervisor e o modo móvel estarão no Modo Nativo.</p>
+</li>
+</ul>
+<h3 id="modo-intermédio" class="headerLink">
+    <a href="#modo-interm%c3%a9dio" class="header-mark"></a>Modo intermédio</h3><p>É um modo hibrído, que mistura o modo clássico com o modo nativo</p>
+<p>Consiste em utilizar os novos dicionários de UI (classes, representações) para uma função existente da versão 6 do Sage X3 (Modo Clássico) requer não apenas a criação de novos dicionários de entidades, mas também a reorganização do código para que funcione no Modo de Serviço com suporte a classes.</p>
+<ul>
+<li>
+<p>Uma ferramenta permite a geração de classes e representações a partir de um objeto simples. No entanto, essa ferramenta foi criada apenas para oferecer suporte a operações de leitura (Modo Intermediário).</p>
+<ul>
+<li>Para operações de atualização, o supervisor mudará para o Modo Clássico.</li>
+<li>A interface móvel está disponível nesse modo.</li>
+</ul>
+</li>
+<li>
+<p>Consulta: Modo Intermediário</p>
+<ul>
+<li>Modo sem estado</li>
+<li>É necessário descrever as ligações das classes com tabelas e representações.</li>
+<li>Ecrãs simples</li>
+<li>Links &ldquo;conectando&rdquo; a outros registros</li>
+<li>Cada página é um &ldquo;mini-portal&rdquo;</li>
+</ul>
+</li>
+<li>
+<p>O modo Nativo funciona em modo sem estado: o único contexto necessário é o token de autenticação. Uma vez que a página solicitada foi enviada ao utilizador, o servidor do Modo Nativo pode gerenciar outra tarefa sem transição.</p>
+</li>
+<li>
+<p>Converter um objeto existente para o Modo Intermediário é mais rápido e requer muito menos modificações. Isso é feito criando uma classe e uma representação apenas com a operação de leitura. Uma ferramenta automatizada reduz a quantidade de trabalho a ser feito. Nesse caso, apenas as facetas de consulta, detalhe e pesquisa serão suportadas: o utilizador pode selecionar ou escolher um registro de uma entidade por meio de uma lista de seleção e exibir os detalhes do registro. Se o trabalho de conversão tiver sido feito dessa maneira para algumas funções do X3:</p>
+<ul>
+<li>O acesso a essas funções será feito no Modo Nativo com uma página de faceta de consulta e uma exibição de detalhes.</li>
+<li>O modo de criação estará disponível nessas páginas.</li>
+</ul>
+</li>
+<li>
+<p>Quando uma operação de edição é solicitada num registro, o cliente mudará automaticamente para o Modo Clássico, e uma página com uma lista à esquerda exibindo o registro atual será exibida. O utilizador poderá então atualizar os dados no Modo v6.</p>
+</li>
+</ul>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 20/06/2023</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://sergiodefaria.github.io/01-x3developmentmodes/" data-title="Modos de desenvolvimento" data-via="xxxx" data-hashtags="Sage X3,Programação"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://sergiodefaria.github.io/01-x3developmentmodes/" data-hashtag="Sage X3"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://sergiodefaria.github.io/01-x3developmentmodes/" data-title="Modos de desenvolvimento"><span class="fab fa-hacker-news fa-fw"></span></button><button title="Share on Line" data-sharer="line" data-url="https://sergiodefaria.github.io/01-x3developmentmodes/" data-title="Modos de desenvolvimento"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="Share on 微博" data-sharer="weibo" data-url="https://sergiodefaria.github.io/01-x3developmentmodes/" data-title="Modos de desenvolvimento"><span class="fab fa-weibo fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sage-x3/">Sage X3</a>,&nbsp;<a href="/tags/programa%C3%A7%C3%A3o/">Programação</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/introducaotransicaodigital/" class="next" rel="next" title="Introdução à Transição Digital: O Impacto da Tecnologia na Sociedade">Introdução à Transição Digital: O Impacto da Tecnologia na Sociedade<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">S. Henrique de Faria</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"tecnologia","mobile-header-typeit":"tecnologia"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>
