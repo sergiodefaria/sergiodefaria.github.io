@@ -15,7 +15,7 @@ As funções podem ser chamadas a partir de um item de menu e de outras funçõe
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sergiodefaria.github.io/x3developmentmodes/" /><meta property="og:image" content="https://sergiodefaria.github.io/x3developmentmodes/featured-image.jpg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-08T12:27:54+01:00" />
-<meta property="article:modified_time" content="2023-05-08T12:27:54+01:00" /><meta property="og:site_name" content="Aferir.pt" />
+<meta property="article:modified_time" content="2023-06-20T13:27:54+01:00" /><meta property="og:site_name" content="Aferir.pt" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sergiodefaria.github.io/x3developmentmodes/featured-image.jpg"/>
 <meta name="twitter:title" content="Modos de desenvolvimento"/>
@@ -45,8 +45,8 @@ As funções podem ser chamadas a partir de um item de menu e de outras funçõe
                             "url": "https:\/\/sergiodefaria.github.io\/x3developmentmodes\/featured-image.jpg",
                             "width":  640 ,
                             "height":  427 
-                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  1295 ,
-        "url": "https:\/\/sergiodefaria.github.io\/x3developmentmodes\/","datePublished": "2023-05-08T12:27:54+01:00","dateModified": "2023-05-08T12:27:54+01:00","publisher": {
+                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  1744 ,
+        "url": "https:\/\/sergiodefaria.github.io\/x3developmentmodes\/","datePublished": "2023-05-08T12:27:54+01:00","dateModified": "2023-06-20T13:27:54+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -168,7 +168,7 @@ As funções podem ser chamadas a partir de um item de menu e de outras funçõe
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">S. Henrique de Faria</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sage-x3-programa%C3%A7%C3%A3o/"><i class="far fa-folder fa-fw"></i>Sage X3 - Programação</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1295 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="20/06/2023">20/06/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1744 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;9 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -326,15 +326,75 @@ A página central contém diferentes campos que são definidos pela aplicação.
     <a href="#modo-apenas-leitura" class="header-mark"></a>Modo apenas-leitura</h3><p>Para apresenção de dados de representações e classes, não permite modificação de dados</p>
 <h3 id="modo-nativo" class="headerLink">
     <a href="#modo-nativo" class="header-mark"></a>Modo nativo</h3><p>Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7</p>
+<ul>
+<li>
+<p>Os metadados serão alterados no servidor:</p>
+<ul>
+<li>Um dicionário de representação substitui janelas e ecrãs.</li>
+<li>O modelo de objeto/consulta/procedimento em lote será alterado.</li>
+<li>A lógica de negócios está associada a classes (métodos).</li>
+<li>O supervisor e o mecanismo lidam com feeds Sdata e JSON.</li>
+</ul>
+</li>
+<li>
+<p>A lógica de negócios e o código associado à interface do utilizador precisam ser separados:</p>
+<ul>
+<li><strong>Objetivo:</strong> ser capaz de executar qualquer função como um serviço.</li>
+<li><strong>Vantagens:</strong> deixa de hacer dificuldades em ter de lidar com webservices e lógica de importação/exportação.</li>
+</ul>
+</li>
+<li>
+<p>O supervisor levará em consideração as operações de CRUD:</p>
+<ul>
+<li>No cabeçalho e nas linhas (com base no UUID).</li>
+</ul>
+</li>
+<li>
+<p>Inicialmente, toda a administração (utilizadores etc.), e apenas alguns recursos do supervisor e o modo móvel estarão no Modo Nativo.</p>
+</li>
+</ul>
 <h3 id="modo-intermédio" class="headerLink">
     <a href="#modo-interm%c3%a9dio" class="header-mark"></a>Modo intermédio</h3><p>É um modo hibrído, que mistura o modo clássico com o modo nativo</p>
+<p>Consiste em utilizar os novos dicionários de UI (classes, representações) para uma função existente da versão 6 do Sage X3 (Modo Clássico) requer não apenas a criação de novos dicionários de entidades, mas também a reorganização do código para que funcione no Modo de Serviço com suporte a classes.</p>
+<ul>
+<li>
+<p>Uma ferramenta permite a geração de classes e representações a partir de um objeto simples. No entanto, essa ferramenta foi criada apenas para oferecer suporte a operações de leitura (Modo Intermediário).</p>
+<ul>
+<li>Para operações de atualização, o supervisor mudará para o Modo Clássico.</li>
+<li>A interface móvel está disponível nesse modo.</li>
+</ul>
+</li>
+<li>
+<p>Consulta: Modo Intermediário</p>
+<ul>
+<li>Modo sem estado</li>
+<li>É necessário descrever as ligações das classes com tabelas e representações.</li>
+<li>Ecrãs simples</li>
+<li>Links &ldquo;conectando&rdquo; a outros registros</li>
+<li>Cada página é um &ldquo;mini-portal&rdquo;</li>
+</ul>
+</li>
+<li>
+<p>O modo Nativo funciona em modo sem estado: o único contexto necessário é o token de autenticação. Uma vez que a página solicitada foi enviada ao utilizador, o servidor do Modo Nativo pode gerenciar outra tarefa sem transição.</p>
+</li>
+<li>
+<p>Converter um objeto existente para o Modo Intermediário é mais rápido e requer muito menos modificações. Isso é feito criando uma classe e uma representação apenas com a operação de leitura. Uma ferramenta automatizada reduz a quantidade de trabalho a ser feito. Nesse caso, apenas as facetas de consulta, detalhe e pesquisa serão suportadas: o utilizador pode selecionar ou escolher um registro de uma entidade por meio de uma lista de seleção e exibir os detalhes do registro. Se o trabalho de conversão tiver sido feito dessa maneira para algumas funções do X3:</p>
+<ul>
+<li>O acesso a essas funções será feito no Modo Nativo com uma página de faceta de consulta e uma exibição de detalhes.</li>
+<li>O modo de criação estará disponível nessas páginas.</li>
+</ul>
+</li>
+<li>
+<p>Quando uma operação de edição é solicitada num registro, o cliente mudará automaticamente para o Modo Clássico, e uma página com uma lista à esquerda exibindo o registro atual será exibida. O utilizador poderá então atualizar os dados no Modo v6.</p>
+</li>
+</ul>
 </div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 08/05/2023</span>
+                <span>Updated on 20/06/2023</span>
             </div>
             <div class="post-info-license"></div>
         </div>

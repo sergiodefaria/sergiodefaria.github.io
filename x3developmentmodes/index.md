@@ -113,7 +113,49 @@ Para apresenção de dados de representações e classes, não permite modifica�
 
 Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7
 
+- Os metadados serão alterados no servidor:
+
+  - Um dicionário de representação substitui janelas e ecrãs.
+  - O modelo de objeto/consulta/procedimento em lote será alterado.
+  - A lógica de negócios está associada a classes (métodos).
+  - O supervisor e o mecanismo lidam com feeds Sdata e JSON.
+
+- A lógica de negócios e o código associado à interface do utilizador precisam ser separados:
+
+  - **Objetivo:** ser capaz de executar qualquer função como um serviço.
+  - **Vantagens:** deixa de hacer dificuldades em ter de lidar com webservices e lógica de importação/exportação.
+
+- O supervisor levará em consideração as operações de CRUD:
+  - No cabeçalho e nas linhas (com base no UUID).
+
+- Inicialmente, toda a administração (utilizadores etc.), e apenas alguns recursos do supervisor e o modo móvel estarão no Modo Nativo.
+
 ### Modo intermédio
 
 É um modo hibrído, que mistura o modo clássico com o modo nativo
+
+Consiste em utilizar os novos dicionários de UI (classes, representações) para uma função existente da versão 6 do Sage X3 (Modo Clássico) requer não apenas a criação de novos dicionários de entidades, mas também a reorganização do código para que funcione no Modo de Serviço com suporte a classes.
+
+- Uma ferramenta permite a geração de classes e representações a partir de um objeto simples. No entanto, essa ferramenta foi criada apenas para oferecer suporte a operações de leitura (Modo Intermediário).
+
+  - Para operações de atualização, o supervisor mudará para o Modo Clássico.
+  - A interface móvel está disponível nesse modo.
+
+- Consulta: Modo Intermediário
+  
+    - Modo sem estado
+    - É necessário descrever as ligações das classes com tabelas e representações.
+    - Ecrãs simples
+    - Links "conectando" a outros registros
+    - Cada página é um "mini-portal"
+
+- O modo Nativo funciona em modo sem estado: o único contexto necessário é o token de autenticação. Uma vez que a página solicitada foi enviada ao utilizador, o servidor do Modo Nativo pode gerenciar outra tarefa sem transição.
+
+- Converter um objeto existente para o Modo Intermediário é mais rápido e requer muito menos modificações. Isso é feito criando uma classe e uma representação apenas com a operação de leitura. Uma ferramenta automatizada reduz a quantidade de trabalho a ser feito. Nesse caso, apenas as facetas de consulta, detalhe e pesquisa serão suportadas: o utilizador pode selecionar ou escolher um registro de uma entidade por meio de uma lista de seleção e exibir os detalhes do registro. Se o trabalho de conversão tiver sido feito dessa maneira para algumas funções do X3:
+
+  - O acesso a essas funções será feito no Modo Nativo com uma página de faceta de consulta e uma exibição de detalhes.
+  - O modo de criação estará disponível nessas páginas.
+
+- Quando uma operação de edição é solicitada num registro, o cliente mudará automaticamente para o Modo Clássico, e uma página com uma lista à esquerda exibindo o registro atual será exibida. O utilizador poderá então atualizar os dados no Modo v6.
+
 
