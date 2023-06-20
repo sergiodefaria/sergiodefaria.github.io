@@ -70,7 +70,9 @@ Definição da Transição DigitalA transição digital envolve a integração d
     </author><guid>https://sergiodefaria.github.io/x3developmentmodes/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
-            </div>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
-Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural Modo apenas-leitura - Para apresenção de dados de representações e classes, não permite modificação de dados Modo nativo - Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7 Modo intermédio - É um modo hibrído, que mistura o modo clássico com o modo nativo ]]></description>
+            </div>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
+Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
+No modo Clássico, o Sage X3 é baseado em funções.
+As funções podem ser chamadas a partir de um item de menu e de outras funções. As funções servem como base para atribuição de direitos de acesso. As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3).]]></description>
 </item></channel>
 </rss>

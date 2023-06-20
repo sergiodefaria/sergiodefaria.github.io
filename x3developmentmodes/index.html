@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
     <title>Modos de desenvolvimento - Aferir - Tecnologias</title><meta name="Description" content="O meu blog sobre tecnologia e informática"><meta property="og:title" content="Modos de desenvolvimento" />
-<meta property="og:description" content="Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
-Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural Modo apenas-leitura - Para apresenção de dados de representações e classes, não permite modificação de dados Modo nativo - Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7 Modo intermédio - É um modo hibrído, que mistura o modo clássico com o modo nativo " />
+<meta property="og:description" content="Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
+Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
+No modo Clássico, o Sage X3 é baseado em funções.
+As funções podem ser chamadas a partir de um item de menu e de outras funções. As funções servem como base para atribuição de direitos de acesso. As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sergiodefaria.github.io/x3developmentmodes/" /><meta property="og:image" content="https://sergiodefaria.github.io/x3developmentmodes/featured-image.jpg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-08T12:27:54+01:00" />
@@ -17,8 +19,10 @@ Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sergiodefaria.github.io/x3developmentmodes/featured-image.jpg"/>
 <meta name="twitter:title" content="Modos de desenvolvimento"/>
-<meta name="twitter:description" content="Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
-Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural Modo apenas-leitura - Para apresenção de dados de representações e classes, não permite modificação de dados Modo nativo - Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7 Modo intermédio - É um modo hibrído, que mistura o modo clássico com o modo nativo "/>
+<meta name="twitter:description" content="Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
+Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
+No modo Clássico, o Sage X3 é baseado em funções.
+As funções podem ser chamadas a partir de um item de menu e de outras funções. As funções servem como base para atribuição de direitos de acesso. As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3)."/>
 <meta name="application-name" content="Aferir tecnologia">
 <meta name="apple-mobile-web-app-title" content="Aferir tecnologia">
 
@@ -41,7 +45,7 @@ Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de
                             "url": "https:\/\/sergiodefaria.github.io\/x3developmentmodes\/featured-image.jpg",
                             "width":  640 ,
                             "height":  427 
-                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  82 ,
+                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  1295 ,
         "url": "https:\/\/sergiodefaria.github.io\/x3developmentmodes\/","datePublished": "2023-05-08T12:27:54+01:00","dateModified": "2023-05-08T12:27:54+01:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -138,16 +142,33 @@ Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de
 <main class="main">
             <div class="container"><div class="toc" id="toc-auto">
         <h2 class="toc-title">Contents</h2>
-        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
   <ul>
-    <li><a href="#modos-de-desenvolvimento">Modos de Desenvolvimento</a></li>
+    <li><a href="#modos-de-desenvolvimento">Modos de Desenvolvimento</a>
+      <ul>
+        <li><a href="#modo-clássico">Modo Clássico</a>
+          <ul>
+            <li><a href="#organização-da-página-clássica">Organização da página Clássica</a></li>
+            <li><a href="#comportamento-principal-de-uma-página-no-modo-clássico">Comportamento principal de uma página no modo Clássico</a></li>
+            <li><a href="#gestão-de-páginas">Gestão de páginas</a></li>
+            <li><a href="#navegação-local">Navegação local</a></li>
+            <li><a href="#tempo-limite">Tempo limite:</a></li>
+            <li><a href="#organização-global-da-página-no-modo-clássico">Organização global da página no modo Clássico:</a></li>
+            <li><a href="#gestão-de-ecrãs-tipo-quadro-nas-páginas-do-modo-clássico">Gestão de ecrãs tipo quadro nas páginas do modo Clássico</a></li>
+          </ul>
+        </li>
+        <li><a href="#modo-apenas-leitura">Modo apenas-leitura</a></li>
+        <li><a href="#modo-nativo">Modo nativo</a></li>
+        <li><a href="#modo-intermédio">Modo intermédio</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
     </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Modos de desenvolvimento</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">S. Henrique de Faria</a>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sage-x3-programa%C3%A7%C3%A3o/"><i class="far fa-folder fa-fw"></i>Sage X3 - Programação</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;82 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="08/05/2023">08/05/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1295 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -162,18 +183,151 @@ Modo Clássico - Modo das versões anteriores do Sage X3 baseado na linguagem de
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#modos-de-desenvolvimento">Modos de Desenvolvimento</a></li>
+    <li><a href="#modos-de-desenvolvimento">Modos de Desenvolvimento</a>
+      <ul>
+        <li><a href="#modo-clássico">Modo Clássico</a>
+          <ul>
+            <li><a href="#organização-da-página-clássica">Organização da página Clássica</a></li>
+            <li><a href="#comportamento-principal-de-uma-página-no-modo-clássico">Comportamento principal de uma página no modo Clássico</a></li>
+            <li><a href="#gestão-de-páginas">Gestão de páginas</a></li>
+            <li><a href="#navegação-local">Navegação local</a></li>
+            <li><a href="#tempo-limite">Tempo limite:</a></li>
+            <li><a href="#organização-global-da-página-no-modo-clássico">Organização global da página no modo Clássico:</a></li>
+            <li><a href="#gestão-de-ecrãs-tipo-quadro-nas-páginas-do-modo-clássico">Gestão de ecrãs tipo quadro nas páginas do modo Clássico</a></li>
+          </ul>
+        </li>
+        <li><a href="#modo-apenas-leitura">Modo apenas-leitura</a></li>
+        <li><a href="#modo-nativo">Modo nativo</a></li>
+        <li><a href="#modo-intermédio">Modo intermédio</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="desenvolvimento-sage-x3" class="headerLink">
     <a href="#desenvolvimento-sage-x3" class="header-mark"></a>Desenvolvimento Sage X3</h1><h2 id="modos-de-desenvolvimento" class="headerLink">
     <a href="#modos-de-desenvolvimento" class="header-mark"></a>Modos de Desenvolvimento</h2><p>Atualmente, existem 4 modos de desenvolvimento no Sage X3:</p>
-<ol>
-<li><strong>Modo Clássico</strong> - Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural</li>
-<li><strong>Modo apenas-leitura</strong> - Para apresenção de dados de representações e classes, não permite modificação de dados</li>
-<li><strong>Modo nativo</strong> - Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7</li>
-<li><strong>Modo intermédio</strong> - É um modo hibrído, que mistura o modo clássico com o modo nativo</li>
-</ol>
+<h3 id="modo-clássico" class="headerLink">
+    <a href="#modo-cl%c3%a1ssico" class="header-mark"></a>Modo Clássico</h3><p>Modo das versões anteriores do Sage X3 baseado na linguagem de programação procedural</p>
+<p>No modo Clássico, o Sage X3 é baseado em funções.</p>
+<ul>
+<li>As funções podem ser chamadas a partir de um item de menu e de outras funções.</li>
+<li>As funções servem como base para atribuição de direitos de acesso.</li>
+<li>As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3).</li>
+</ul>
+<p>No <strong>Modo Clássico</strong>, as páginas são baseadas no design do cliente para Windows versão 6. Este modo é uma emulação da versão 6, que não requer nenhuma modificação no repositório da versão 6 para funcionar. Os elementos armazenados no dicionário de ecrãs, dicionário de ações, dicionário de janelas, assim como os scripts projetados para a versão 6 são usados neste modo.
+Os princípios básicos da ergonomia da versão 6 ainda estão presentes:</p>
+<ul>
+<li>A interface é controlada pelo servidor.</li>
+<li>Um controle de bloqueio de campo não pode ser ignorado e deve ser preenchido antes que outro campo possa ser preenchido.</li>
+<li>O controle é síncrono.</li>
+</ul>
+<p>Em baixo é apresentado um exemplo de uma página Clássica na <strong>versão 6</strong>, mostrando os elementos de navegação.
+
+
+
+<img src="/images/ScreenV6_hua192f37f18b31404425d07ea33177809_219229_1000x0_resize_box_3.png" alt="" ></p>
+<p>Em baixo é apresentado um exemplo de uma página Clássica na <strong>versão 12</strong>, mostrando os elementos de navegação.
+
+
+
+<img src="/images/Screenv12_hu996add9d6844e76b688ac0c98c5a9f8d_516262_1000x0_resize_box_3.png" alt="" ></p>
+<h4 id="organização-da-página-clássica" class="headerLink">
+    <a href="#organiza%c3%a7%c3%a3o-da-p%c3%a1gina-cl%c3%a1ssica" class="header-mark"></a>Organização da página Clássica</h4><ul>
+<li>Uma lista à esquerda (se aplicável) com várias caixas.</li>
+<li>Uma página central onde a informação é mostrada.</li>
+<li>Um painel à direita com links adicionais.</li>
+</ul>
+<p>A lista à esquerda é usada para seleção e operações de escolha. É possível filtrar na primeira linha da lista, inserindo valores que podem ser prefixados por um operador. O operador padrão utilizado é &ldquo;contendo&rdquo;.
+Os botões &ldquo;Anterior&rdquo; e &ldquo;Seguinte&rdquo; são utilizados para aceder à página anterior ou seguinte de registos numa lista.
+Podem existir vários painéis à esquerda, especialmente um painel de últimos registos lidos que lista os registos acedidos recentemente.
+A página central contém diferentes campos que são definidos pela aplicação.</p>
+<p>A transição de uma função existente para o modo Nativo pode levar um tempo significativo. Para garantir a disponibilidade de todas as funções Clássicas com o novo cliente via browser, mesmo que os desenvolvedores ou parceiros de negócios não tenham tido tempo para fazer a transição do código, o modo Clássico ainda está incorporado no ambiente mais recente, podendo ser utilizadas as funções existentes.</p>
+<p>Como a reorganização do código pode levar tempo e para simplificar a transição entre o desenvolvimento Clássico e o desenvolvimento Nativo, uma camada adicional de interface do utilizador chamada Transição foi desenvolvida para ambientes desde a versão 7.</p>
+<ul>
+<li>
+<p>Hospedada pelo servidor Web, essa camada suporta uma interface do utilizador envolta na estrutura do modo Nativo, mas com um estilo muito próximo ao do modo Nativo.</p>
+</li>
+<li>
+<p>Nesse modo, é estabelecida uma conexão entre o servidor Web e o motor X3 em condições equivalentes às existentes na versão 6. Além disso, o servidor do modo Nativo age como um simples proxy nesse caso.</p>
+</li>
+<li>
+<p>A transição de uma página do modo Nativo para um ecrã de fusão é relativamente transparente (o ecrã de Transição sobrepõe-se à página do modo Nativo), mas as funções avançadas não estão disponíveis.</p>
+</li>
+<li>
+<p>O cliente de transição, ainda em desenvolvimento, estará disponível em vários navegadores e será capaz de executar as ecrãs Clássicos sem qualquer reorganização de código.</p>
+<ul>
+<li>A autoria é limitada nesse modo.</li>
+<li>A interface móvel não está disponível nesse modo.</li>
+</ul>
+</li>
+<li>
+<p>Funciona com os seguintes princípios:</p>
+<ul>
+<li>
+<p>Num painel de controle, um item de menu pode referir-se a uma função Clássica pelo seu nome. Quando isso acontece, durante a execução, uma página é aberta mostrando o ecrã Clássico e usando o protocolo da versão 6 para se conectar ao servidor X3.</p>
+</li>
+<li>
+<p>A função Clássica chamada dessa maneira funciona com as mesmas características presentes na versão 6.</p>
+<ul>
+<li>Uma lista à esquerda está disponível.</li>
+<li>Os controles são bloqueantes e síncronos.</li>
+<li>O movimento do cursor é completamente controlado pelo servidor e não é possível fazer alterações nessas páginas.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>O visual do ecrã foi projetado para ser o mais próximo possível do visual das novas páginas do modo Nativo.</p>
+</li>
+<li>
+<p>O modo Clássico pode exigir apenas modificações mínimas no código existente da versão 6 para funcionar.</p>
+</li>
+</ul>
+<h4 id="comportamento-principal-de-uma-página-no-modo-clássico" class="headerLink">
+    <a href="#comportamento-principal-de-uma-p%c3%a1gina-no-modo-cl%c3%a1ssico" class="header-mark"></a>Comportamento principal de uma página no modo Clássico</h4><p>Os diferentes atalhos que existiam na versão 6 (como as teclas de função F2, F5, F6, F9, F11, F12&hellip;) foram substituídos por uma combinação da tecla ESC e a mesma tecla de função, pois as teclas de função são geridas pelos navegadores e podem ter usos diferentes dependendo do navegador.</p>
+<h4 id="gestão-de-páginas" class="headerLink">
+    <a href="#gest%c3%a3o-de-p%c3%a1ginas" class="header-mark"></a>Gestão de páginas</h4><p>Quando uma página no modo Clássico é aberta, é utilizada uma conexão do tipo v6 com um processo X3. Na primeira vez que isso ocorre, o tempo de conexão pode levar vários segundos (como acontecia com uma conexão v6).</p>
+<ul>
+<li>Fechar uma página no modo Clássico irá sair da função atual e perder quaisquer dados modificados. Será o mesmo se o botão de voltar for usado ou se outro URL for digitado. Se houver um trabalho pendente, aparecerá uma caixa de diálogo para solicitar uma confirmação.</li>
+</ul>
+<h4 id="navegação-local" class="headerLink">
+    <a href="#navega%c3%a7%c3%a3o-local" class="header-mark"></a>Navegação local</h4><p>Uma página no modo Clássico pode chamar outra página no modo Clássico (usando uma seleção, usando o atalho Esc+F7, chamando outra entidade - operação conhecida como &ldquo;tunel&rdquo; na terminologia da versão 6 - ou seguindo outro link). Quando isso acontece, uma nova página no Modo Clássico é empilhada sobre a anterior, e isso pode ser repetido. Um rastro de navegação aparece no topo da página.</p>
+<ul>
+<li>
+<p>Clicar no &ldquo;x&rdquo; presente apenas na última parte do rastro de navegação fechará a página e retornará à anterior (a operação de fechar terá o mesmo efeito).</p>
+</li>
+<li>
+<p>Também é possível abrir uma função que empilha uma página adicional com o link &ldquo;Ir para função&rdquo; (conforme mencionado acima). A página que é aberta é exatamente a mesma que a página exibida na versão 6 ao digitar a tecla F7.</p>
+</li>
+</ul>
+<h4 id="tempo-limite" class="headerLink">
+    <a href="#tempo-limite" class="header-mark"></a>Tempo limite:</h4><p>A sessão no Modo Clássico é gerida com o protocolo v6; portanto, é possível desconectar uma sessão após ocorrer um tempo limite. Quando isso acontece, é exibida uma janela de confirmação.</p>
+<ul>
+<li>Se o utilizador não responder &ldquo;Não&rdquo;, a página é fechada e é apresentado o portal do Modo Nativo. Uma barra azul localizada abaixo da barra principal fornece ao utilizador informações sobre a desconexão por tempo limite.</li>
+</ul>
+<h4 id="organização-global-da-página-no-modo-clássico" class="headerLink">
+    <a href="#organiza%c3%a7%c3%a3o-global-da-p%c3%a1gina-no-modo-cl%c3%a1ssico" class="header-mark"></a>Organização global da página no modo Clássico:</h4><ul>
+<li>
+<p>A organização de uma página no modo Clássico é a mesma que uma página na versão 6, exceto pelo fato de que os menus e botões estão localizados numa barra vertical do lado direito. Isso significa que encontraremos em tal página:</p>
+<ul>
+<li>Uma lista à esquerda (se aplicável) com várias caixas.</li>
+<li>Uma página central onde os dados estão localizados.</li>
+<li>Uma barra lateral direita com links adicionais.</li>
+<li>Os painéis esquerdo e direito podem ser ocultados para fornecer mais espaço aos dados da aplicação. Os ícones fecham o painel direito e esquerdo, mas o atalho direto ESC+F11 fecha ambos os painéis em uma única operação. Quando os painéis estão fechados, ESC+F11 reabre-os.</li>
+</ul>
+</li>
+</ul>
+<h4 id="gestão-de-ecrãs-tipo-quadro-nas-páginas-do-modo-clássico" class="headerLink">
+    <a href="#gest%c3%a3o-de-ecr%c3%a3s-tipo-quadro-nas-p%c3%a1ginas-do-modo-cl%c3%a1ssico" class="header-mark"></a>Gestão de ecrãs tipo quadro nas páginas do modo Clássico</h4><p>A gestão dos ecrãs tipo quadro funciona de forma diferente em relação à versão 6: deixou de haver foco intermédio numa linha antes de ter o foco numa célula. Portanto, um único clique leva diretamente ao modo de edição numa célula, não sendo mais necessário um clique duplo como na versão 6.</p>
+<ul>
+<li>Pressionar Esc em uma linha continua a sair da modificação da linha, e pressionar Enter em um campo na grade leva ao primeiro campo localizado após a grade.</li>
+</ul>
+<h3 id="modo-apenas-leitura" class="headerLink">
+    <a href="#modo-apenas-leitura" class="header-mark"></a>Modo apenas-leitura</h3><p>Para apresenção de dados de representações e classes, não permite modificação de dados</p>
+<h3 id="modo-nativo" class="headerLink">
+    <a href="#modo-nativo" class="header-mark"></a>Modo nativo</h3><p>Este modo é baseado na linguagem de programação orientada a objetos e foi introduzida na versão 7</p>
+<h3 id="modo-intermédio" class="headerLink">
+    <a href="#modo-interm%c3%a9dio" class="header-mark"></a>Modo intermédio</h3><p>É um modo hibrído, que mistura o modo clássico com o modo nativo</p>
 </div>
 
         <div class="post-footer" id="post-footer">
