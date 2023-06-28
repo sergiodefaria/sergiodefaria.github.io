@@ -4,7 +4,17 @@
         <link>https://sergiodefaria.github.io/tags/sage-x3/</link>
         <description>Sage X3 - Tag - Aferir - Tecnologias</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 20 Jun 2023 17:20:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/tags/sage-x3/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 27 Jun 2023 17:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/tags/sage-x3/" rel="self" type="application/rss+xml" /><item>
+    <title>Estrutura de desenvolvimento no modo clássico</title>
+    <link>https://sergiodefaria.github.io/03-estrutura-de-desenvolvimento-no-modo-classico/</link>
+    <pubDate>Tue, 27 Jun 2023 17:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/03-estrutura-de-desenvolvimento-no-modo-classico/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/03-estrutura-de-desenvolvimento-no-modo-classico/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Este artigo fornece informações sobre como uma função do Sage X3 é construída. Nos artigos seguintes, darei mais detalhes sobre a criação da interface gráfica do utilizador e o processamento que ocorre nos bastidores.
+Muitos componentes são usados para construir e gerar uma função do Sage X3. O ponto de partida é criar uma tabela que irá armazenar os dados. Os ecrãs são utilizados para exibir dados de uma ou mais tabelas de referência para entrada de dados.]]></description>
+</item><item>
     <title>Arquitectura e interface do utilizador</title>
     <link>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</link>
     <pubDate>Tue, 20 Jun 2023 17:20:54 &#43;0100</pubDate><author>

@@ -2,28 +2,29 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://sergiodefaria.github.io/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/categories/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/posts/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/programa%C3%A7%C3%A3o/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/sage-x3/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/categories/sage-x3-programa%C3%A7%C3%A3o/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/ciberseguran%C3%A7a/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/categories/ciberseguran%C3%A7a/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/introducao-cyberseguranca/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/responsabilidadecoletiva/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/seguran%C3%A7adigital/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/digital/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/geracao-de-valor-na-transicao-digital/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/tags/transi%C3%A7%C3%A3o/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/categories/transi%C3%A7%C3%A3o-digital/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/o-que-e-a-transicao-digital/</loc><lastmod>2023-06-18T21:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/compreendendo-a-transiccao-digital/</loc><lastmod>2023-06-15T22:55:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/o-paradoxo-da-transicao-digital/</loc><lastmod>2023-06-14T21:03:01&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/introducaotransicaodigital/</loc><lastmod>2023-06-13T20:30:57&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://sergiodefaria.github.io/01-x3developmentmodes/</loc><lastmod>2023-06-20T13:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/categories/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/03-estrutura-de-desenvolvimento-no-modo-classico/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/posts/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/programa%C3%A7%C3%A3o/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/sage-x3/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/categories/sage-x3-programa%C3%A7%C3%A3o/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/</loc><lastmod>2023-06-27T17:23:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://sergiodefaria.github.io/02-arquitectura-e-interface-do-utilizador/</loc><lastmod>2023-06-20T17:20:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/ciberseguran%C3%A7a/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/categories/ciberseguran%C3%A7a/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/introducao-cyberseguranca/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/responsabilidadecoletiva/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/seguran%C3%A7adigital/</loc><lastmod>2023-06-19T13:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/digital/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/geracao-de-valor-na-transicao-digital/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/tags/transi%C3%A7%C3%A3o/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/categories/transi%C3%A7%C3%A3o-digital/</loc><lastmod>2023-06-18T22:00:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/o-que-e-a-transicao-digital/</loc><lastmod>2023-06-18T21:44:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/compreendendo-a-transiccao-digital/</loc><lastmod>2023-06-15T22:55:00&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/o-paradoxo-da-transicao-digital/</loc><lastmod>2023-06-14T21:03:01&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://sergiodefaria.github.io/introducaotransicaodigital/</loc><lastmod>2023-06-13T20:30:57&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://sergiodefaria.github.io/01-x3developmentmodes/</loc><lastmod>2023-06-20T13:27:54&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://sergiodefaria.github.io/tags/about/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sergiodefaria.github.io/pages/about/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://sergiodefaria.github.io/tags/me/</loc><lastmod>2023-04-28T16:27:12&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
