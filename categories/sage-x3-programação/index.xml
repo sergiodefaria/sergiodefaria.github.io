@@ -4,7 +4,18 @@
         <link>https://sergiodefaria.github.io/categories/sage-x3-programa%C3%A7%C3%A3o/</link>
         <description>Sage X3 - Programação - Category - Aferir - Tecnologias</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 27 Jun 2023 17:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/categories/sage-x3-programa%C3%A7%C3%A3o/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 04 Jul 2023 23:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/categories/sage-x3-programa%C3%A7%C3%A3o/" rel="self" type="application/rss+xml" /><item>
+    <title>Códigos de atividade</title>
+    <link>https://sergiodefaria.github.io/04-codigos-de-atividade/</link>
+    <pubDate>Tue, 04 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/04-codigos-de-atividade/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/04-codigos-de-atividade/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Os códigos de atividade são códigos de assinatura usados para realizar o seguinte:Proteger e identificar desenvolvimentos específicos (Tipo = Funcional)
+Os códigos de atividade verticais devem começar com X Os códigos de atividade específicos devem começar com Y ou Z Proteção na instalação de patches e atualizações Identificação para extração de patch e validação de dicionário Ativar ou desativar elementos do Sage X3 (Tipo = Funcional)
+Tabelas, índices de tabelas, campos de tabelas Ecrãs, blocos de ecrãs, campos de ecrãs Objetos, parâmetros individuais do objeto Separadores de janelas Anexar uma dimensão personalizável aos elementos de matriz (Tipo = Dimensão)]]></description>
+</item><item>
     <title>Estrutura de desenvolvimento no modo clássico</title>
     <link>https://sergiodefaria.github.io/03-estrutura-de-desenvolvimento-no-modo-classico/</link>
     <pubDate>Tue, 27 Jun 2023 17:23:54 &#43;0100</pubDate><author>
