@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Tabelas e Vistas - Aferir - Tecnologias</title><meta name="Description" content="O meu blog sobre tecnologia e informática"><meta property="og:title" content="Tabelas e Vistas" />
+<meta property="og:description" content="Tabelas e CamposCampos de tabela Os campos (colunas da tabela) são identificados principalmente pelos seguintes elementos: Código Tipo de dado e comprimento Designação (Normal / Longa / Curta) Dimensão Os campos podem estar associados a uma tabela de referência (Tabela Relacionada): A expressão de vínculo contém os valores para vincular tabelas com índices complexos. As opções de cancelamento especificam as verificações de integridade de dados a serem realizadas quando um registro relacionado é excluído." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sergiodefaria.github.io/07-tabelas-e-vistas/" /><meta property="og:image" content="https://sergiodefaria.github.io/07-tabelas-e-vistas/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-13T23:23:54+01:00" />
+<meta property="article:modified_time" content="2023-07-13T23:23:54+01:00" /><meta property="og:site_name" content="Aferir.pt" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sergiodefaria.github.io/07-tabelas-e-vistas/featured-image.jpg"/>
+<meta name="twitter:title" content="Tabelas e Vistas"/>
+<meta name="twitter:description" content="Tabelas e CamposCampos de tabela Os campos (colunas da tabela) são identificados principalmente pelos seguintes elementos: Código Tipo de dado e comprimento Designação (Normal / Longa / Curta) Dimensão Os campos podem estar associados a uma tabela de referência (Tabela Relacionada): A expressão de vínculo contém os valores para vincular tabelas com índices complexos. As opções de cancelamento especificam as verificações de integridade de dados a serem realizadas quando um registro relacionado é excluído."/>
+<meta name="application-name" content="Aferir tecnologia">
+<meta name="apple-mobile-web-app-title" content="Aferir tecnologia">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://sergiodefaria.github.io/07-tabelas-e-vistas/" /><link rel="prev" href="https://sergiodefaria.github.io/06-menus-locais/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Tabelas e Vistas",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sergiodefaria.github.io\/07-tabelas-e-vistas\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/sergiodefaria.github.io\/07-tabelas-e-vistas\/featured-image.jpg",
+                            "width":  640 ,
+                            "height":  427 
+                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  597 ,
+        "url": "https:\/\/sergiodefaria.github.io\/07-tabelas-e-vistas\/","datePublished": "2023-07-13T23:23:54+01:00","dateModified": "2023-07-13T23:23:54+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "S. Henrique de Faria"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="desktop-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blog </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="mobile-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Blog</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#campos-de-tabela">Campos de tabela</a></li>
+    <li><a href="#códigos-de-campos">Códigos de Campos</a></li>
+    <li><a href="#descrição-de-campos">Descrição de Campos</a></li>
+    <li><a href="#tipos-de-dados-no-sage-x3">Tipos de Dados no Sage X3</a></li>
+    <li><a href="#links-de-integridade-de-dados">Links de Integridade de Dados</a></li>
+    <li><a href="#restrições">Restrições</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Tabelas e Vistas</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">S. Henrique de Faria</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sage-x3-programa%C3%A7%C3%A3o/"><i class="far fa-folder fa-fw"></i>Sage X3 - Programação</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="13/07/2023">13/07/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="13/07/2023">13/07/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;597 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/07-tabelas-e-vistas/featured-image.jpg"
+        srcset="/07-tabelas-e-vistas/featured-image.jpg, /07-tabelas-e-vistas/featured-image.jpg 1.5x, /07-tabelas-e-vistas/featured-image.jpg 2x"
+        sizes="auto"
+        alt="/07-tabelas-e-vistas/featured-image.jpg"
+        title="/07-tabelas-e-vistas/featured-image.jpg" height="427"   width="640" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#campos-de-tabela">Campos de tabela</a></li>
+    <li><a href="#códigos-de-campos">Códigos de Campos</a></li>
+    <li><a href="#descrição-de-campos">Descrição de Campos</a></li>
+    <li><a href="#tipos-de-dados-no-sage-x3">Tipos de Dados no Sage X3</a></li>
+    <li><a href="#links-de-integridade-de-dados">Links de Integridade de Dados</a></li>
+    <li><a href="#restrições">Restrições</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="tabelas-e-campos" class="headerLink">
+    <a href="#tabelas-e-campos" class="header-mark"></a>Tabelas e Campos</h1><h2 id="campos-de-tabela" class="headerLink">
+    <a href="#campos-de-tabela" class="header-mark"></a>Campos de tabela</h2><ul>
+<li>Os campos (colunas da tabela) são identificados principalmente pelos seguintes elementos:
+<ul>
+<li>Código</li>
+<li>Tipo de dado e comprimento</li>
+<li>Designação (Normal / Longa / Curta)</li>
+<li>Dimensão</li>
+</ul>
+</li>
+<li>Os campos podem estar associados a uma tabela de referência (Tabela Relacionada):
+<ul>
+<li>A expressão de vínculo contém os valores para vincular tabelas com índices complexos.</li>
+<li>As opções de cancelamento especificam as verificações de integridade de dados a serem realizadas quando um registro relacionado é excluído.</li>
+</ul>
+</li>
+<li>Tipos Fortes ou Fracos podem ser usados como campos de tabela.
+Tipos Fortes estão principalmente relacionados com Objetos Sage X3 (por exemplo, Produtos (ITM), Clientes (BPC) etc.).
+Principais Tipos Fracos:
+<ul>
+<li>A (Texto/String)</li>
+<li>C (Número inteiro curto)</li>
+<li>L (Número inteiro longo)</li>
+<li>D (Data)</li>
+<li>DCB (Ponto Flutuante/Floating Point)</li>
+</ul>
+</li>
+</ul>
+<h2 id="códigos-de-campos" class="headerLink">
+    <a href="#c%c3%b3digos-de-campos" class="header-mark"></a>Códigos de Campos</h2><ul>
+<li>Campos específicos podem ser adicionados às <strong>tabelas standard</strong> existentes. Nesse caso, seus códigos devem <strong>começar com X, Y ou Z</strong>. Códigos para campos adicionados a uma <strong>tabela específica</strong> podem começar com <strong>qualquer letra</strong>.</li>
+<li>Os códigos de campo standard são codificados usando pedaços de 3 letras em inglês. Por exemplo, o campo BPC é um cliente (Business Partner Customer) e o campo BPCORD é o cliente do pedido de vendas (ORD = Order). STOFCY é a STOring FaCilitY (Estabelecimento de Armazenagem), etc.</li>
+<li>O código do campo identifica o campo em todo o software Sage X3. Por exemplo, o campo MEUCAMPO na tabela XTABLE com a abreviação XTB será identificado por [F:XTB]MEUCAMPO.</li>
+</ul>
+<h2 id="descrição-de-campos" class="headerLink">
+    <a href="#descri%c3%a7%c3%a3o-de-campos" class="header-mark"></a>Descrição de Campos</h2><ul>
+<li>As três colunas de descrição definem as descrições dos campos como serão propostas por padrão no dicionário de ecrãs (dependendo do espaço disponível no ecrã, a descrição abreviada é limitada a 12 caracteres, a descrição normal a 20 caracteres e a descrição longa a 35 caracteres).</li>
+</ul>
+<p>Essas descrições são textos traduzíveis e são armazenadas numa tabela dedicada, ATEXTE. Quando um novo texto é inserido, o programador tem a opção de selecionar um texto existente ou criar um novo (personalizado).</p>
+<h2 id="tipos-de-dados-no-sage-x3" class="headerLink">
+    <a href="#tipos-de-dados-no-sage-x3" class="header-mark"></a>Tipos de Dados no Sage X3</h2><ul>
+<li>No software Sage X3, vários tipos de dados &ldquo;fracos&rdquo; são predefinidos, como A (Texto/Caractere), C (Número inteiro curto), etc. No entanto, um conjunto de tipos de dados &ldquo;fortes&rdquo; foi criado, com base nos tipos fracos e nas definições de objetos (veja a seção Tipos de Dados). Por exemplo, um campo do tipo BPC (Clientes) ou SOH (Encomendas de Vendas) pode ser definido, e, nesse caso, ele seguirá os parâmetros e formatos definidos para esses objetos.</li>
+</ul>
+<h2 id="links-de-integridade-de-dados" class="headerLink">
+    <a href="#links-de-integridade-de-dados" class="header-mark"></a>Links de Integridade de Dados</h2><ul>
+<li>Um campo pode estar ligado a outra tabela no software, usando a coluna Tabela Ligada. Quando a tabela ligada possui um índice com mais de um componente, a Expressão de ligação contém os valores exatos aos quais o campo deve se ligar: seja constantes ou campos da tabela atual, expressos por seus códigos.</li>
+<li>A coluna Anulação define verificações de integridade de dados a serem realizadas quando o registo na tabela ligada é excluído:
+<ul>
+<li><strong>Bloqueante</strong>: O registro na tabela ligada não pode ser excluído se houver algum registro que faça referência àquela chave na tabela atual.</li>
+<li><strong>Suprimir</strong>: Quando o registro na tabela ligada é excluído, todos os registros na tabela atual que fazem referência àquela chave serão excluídos.</li>
+<li><strong>V. a Zero</strong>: Quando o registro na tabela ligada é excluído, o valor do campo na tabela atual será substituído por um valor em branco.</li>
+<li><strong>Outro</strong>: Nenhuma verificação de integridade de dados.</li>
+</ul>
+</li>
+</ul>
+<h2 id="restrições" class="headerLink">
+    <a href="#restri%c3%a7%c3%b5es" class="header-mark"></a>Restrições</h2><ul>
+<li>Cada ocorrência de um campo dimensionado é uma coluna na tabela da base de dados.</li>
+<li>O número máximo de campos nomeados é 255.</li>
+<li>O número máximo de colunas (Campo*dimensão) é 512.</li>
+<li>Tamanho Máximo do Registro
+<ul>
+<li><strong>MSSQL</strong> - 8K (8 kilobytes)</li>
+<li><strong>Oracle</strong> - 32K (32 kilobytes)</li>
+</ul>
+</li>
+</ul>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 13/07/2023</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://sergiodefaria.github.io/07-tabelas-e-vistas/" data-title="Tabelas e Vistas" data-via="xxxx" data-hashtags="Sage X3,Programação"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://sergiodefaria.github.io/07-tabelas-e-vistas/" data-hashtag="Sage X3"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://sergiodefaria.github.io/07-tabelas-e-vistas/" data-title="Tabelas e Vistas"><span class="fab fa-hacker-news fa-fw"></span></button><button title="Share on Line" data-sharer="line" data-url="https://sergiodefaria.github.io/07-tabelas-e-vistas/" data-title="Tabelas e Vistas"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="Share on 微博" data-sharer="weibo" data-url="https://sergiodefaria.github.io/07-tabelas-e-vistas/" data-title="Tabelas e Vistas"><span class="fab fa-weibo fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sage-x3/">Sage X3</a>,&nbsp;<a href="/tags/programa%C3%A7%C3%A3o/">Programação</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/06-menus-locais/" class="prev" rel="prev" title="Menus Locais"><i class="fas fa-angle-left fa-fw"></i>Menus Locais</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">S. Henrique de Faria</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"tecnologia","mobile-header-typeit":"tecnologia"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

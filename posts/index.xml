@@ -4,7 +4,34 @@
         <link>https://sergiodefaria.github.io/posts/</link>
         <description>All Posts | Aferir - Tecnologias</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 04 Jul 2023 23:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Thu, 13 Jul 2023 23:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Tabelas e Vistas</title>
+    <link>https://sergiodefaria.github.io/07-tabelas-e-vistas/</link>
+    <pubDate>Thu, 13 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/07-tabelas-e-vistas/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/07-tabelas-e-vistas/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Tabelas e CamposCampos de tabela Os campos (colunas da tabela) são identificados principalmente pelos seguintes elementos: Código Tipo de dado e comprimento Designação (Normal / Longa / Curta) Dimensão Os campos podem estar associados a uma tabela de referência (Tabela Relacionada): A expressão de vínculo contém os valores para vincular tabelas com índices complexos. As opções de cancelamento especificam as verificações de integridade de dados a serem realizadas quando um registro relacionado é excluído.]]></description>
+</item><item>
+    <title>Menus Locais</title>
+    <link>https://sergiodefaria.github.io/06-menus-locais/</link>
+    <pubDate>Thu, 06 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/06-menus-locais/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/06-menus-locais/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Menus locais (Mensagens aplicativo)Os menus locais definem listas de texto que aparecem como menus drop-down, botões de opção e caixas de seleção nos ecrãs do Sage X3. Os menus locais são também usados para mensagens em caixas de informações, erros, avisos, etc. A seguir, tem um exemplo de um menu local em forma de menu suspenso (menu drop-downn) definido na função Mensagens de menus locais (TXT) (sob Tabelas no bloco Desenvolvimento &gt; Dados e parâmetros) e o resultado disso no campo Classe ABC na função Sites dos Produtos (no bloco Dados comuns &gt; Categorias de produtos).]]></description>
+</item><item>
+    <title>Tipos de dados</title>
+    <link>https://sergiodefaria.github.io/05-tipos-de-dados/</link>
+    <pubDate>Wed, 05 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/05-tipos-de-dados/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/05-tipos-de-dados/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Tipos de DadosExistem vários tipos de dados básicos predefinidos no Sage X3, como L (inteiro longo), D (Data), A (alfanumérico). Além disso, existe um conjunto de tipos &ldquo;fortes&rdquo; construído com base em tipos fracos e em definições de objeto. Por exemplo, um campo do tipo BPC (Cliente) ou SOH (Encomendas de Vendas) pode ser definido, caso em que estará em conformidade com os parâmetros e formatos definidos para esses objetos.]]></description>
+</item><item>
     <title>Códigos de atividade</title>
     <link>https://sergiodefaria.github.io/04-codigos-de-atividade/</link>
     <pubDate>Tue, 04 Jul 2023 23:23:54 &#43;0100</pubDate><author>
@@ -73,35 +100,5 @@ Definição da Transição DigitalA transição digital envolve a integração d
     <description><![CDATA[<div class="featured-image">
                 <img src="/compreendendo-a-transiccao-digital/Compreendendo.jpg" referrerpolicy="no-referrer">
             </div>A transição digital é um processo complexo e abrangente que envolve a adoção de tecnologias digitais e a transformação de processos, operações e modelos de negócios para se adaptar a um mundo cada vez mais digitalizado. Para que essa transição seja bem-sucedida, é essencial compreender e aplicar alguns princípios-base que podem impulsionar esse processo. Neste artigo, exploraremos os princípios da curiosidade, persistência e análise de perspectivas e como eles podem contribuir para uma transição digital eficaz.]]></description>
-</item><item>
-    <title>O Paradoxo da Transição Digital</title>
-    <link>https://sergiodefaria.github.io/o-paradoxo-da-transicao-digital/</link>
-    <pubDate>Wed, 14 Jun 2023 21:24:03 &#43;0100</pubDate><author>
-        <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/o-paradoxo-da-transicao-digital/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/o-paradoxo-da-transicao-digital/Paradoxo.jpg" referrerpolicy="no-referrer">
-            </div>A transição digital é um processo que traz consigo grandes expectativas de transformação e crescimento para as organizações. No entanto, muitos CEOs e líderes empresariais têm expressado insatisfação com os esforços de transição digital nas suas organizações. Esse paradoxo entre as oportunidades prometidas pela transição digital e a realidade da sua implementação pode ser atribuído a diversos fatores. Neste artigo, exploraremos as razões por trás dessa insatisfação e discutiremos como superar o paradoxo e impulsionar uma transição digital bem-sucedida.]]></description>
-</item><item>
-    <title>Introdução à Transição Digital: O Impacto da Tecnologia na Sociedade</title>
-    <link>https://sergiodefaria.github.io/introducaotransicaodigital/</link>
-    <pubDate>Tue, 13 Jun 2023 20:30:57 &#43;0100</pubDate><author>
-        <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/introducaotransicaodigital/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/introducaotransicaodigital/TransiccaoDigital.jpg" referrerpolicy="no-referrer">
-            </div>IntroduçãoVivemos numa era em que a tecnologia está em constante evolução e tem um impacto profundo em todos os aspectos da nossa vida. A transição digital, que se refere à adoção generalizada de tecnologias digitais e à transformação resultante nos processos, serviços e comportamentos da sociedade, está a moldar o nosso mundo de maneiras sem precedentes. Neste artigo, exploraremos o conceito de transição digital, o seu significado e como ela está afetando diversos setores da sociedade.]]></description>
-</item><item>
-    <title>Modos de desenvolvimento</title>
-    <link>https://sergiodefaria.github.io/01-x3developmentmodes/</link>
-    <pubDate>Mon, 08 May 2023 12:27:54 &#43;0100</pubDate><author>
-        <name>S. Henrique de Faria</name>
-    </author><guid>https://sergiodefaria.github.io/01-x3developmentmodes/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/01-x3developmentmodes/featured-image.jpg" referrerpolicy="no-referrer">
-            </div>Desenvolvimento Sage X3Modos de DesenvolvimentoAtualmente, existem 4 modos de desenvolvimento no Sage X3:
-Modo ClássicoModo das versões anteriores do Sage X3 baseado na linguagem de programação procedural
-No modo Clássico, o Sage X3 é baseado em funções.
-As funções podem ser chamadas a partir de um item de menu e de outras funções. As funções servem como base para atribuição de direitos de acesso. As funções são identificadas por um código (variável GFONCTION, dica de texto nos menus do Sage X3).]]></description>
 </item></channel>
 </rss>

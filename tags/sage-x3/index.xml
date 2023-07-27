@@ -4,7 +4,34 @@
         <link>https://sergiodefaria.github.io/tags/sage-x3/</link>
         <description>Sage X3 - Tag - Aferir - Tecnologias</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>henrique@aferir.com (S. Henrique de Faria)</managingEditor>
-            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Tue, 04 Jul 2023 23:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/tags/sage-x3/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>henrique@aferir.com (S. Henrique de Faria)</webMaster><lastBuildDate>Thu, 13 Jul 2023 23:23:54 &#43;0100</lastBuildDate><atom:link href="https://sergiodefaria.github.io/tags/sage-x3/" rel="self" type="application/rss+xml" /><item>
+    <title>Tabelas e Vistas</title>
+    <link>https://sergiodefaria.github.io/07-tabelas-e-vistas/</link>
+    <pubDate>Thu, 13 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/07-tabelas-e-vistas/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/07-tabelas-e-vistas/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Tabelas e CamposCampos de tabela Os campos (colunas da tabela) são identificados principalmente pelos seguintes elementos: Código Tipo de dado e comprimento Designação (Normal / Longa / Curta) Dimensão Os campos podem estar associados a uma tabela de referência (Tabela Relacionada): A expressão de vínculo contém os valores para vincular tabelas com índices complexos. As opções de cancelamento especificam as verificações de integridade de dados a serem realizadas quando um registro relacionado é excluído.]]></description>
+</item><item>
+    <title>Menus Locais</title>
+    <link>https://sergiodefaria.github.io/06-menus-locais/</link>
+    <pubDate>Thu, 06 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/06-menus-locais/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/06-menus-locais/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Menus locais (Mensagens aplicativo)Os menus locais definem listas de texto que aparecem como menus drop-down, botões de opção e caixas de seleção nos ecrãs do Sage X3. Os menus locais são também usados para mensagens em caixas de informações, erros, avisos, etc. A seguir, tem um exemplo de um menu local em forma de menu suspenso (menu drop-downn) definido na função Mensagens de menus locais (TXT) (sob Tabelas no bloco Desenvolvimento &gt; Dados e parâmetros) e o resultado disso no campo Classe ABC na função Sites dos Produtos (no bloco Dados comuns &gt; Categorias de produtos).]]></description>
+</item><item>
+    <title>Tipos de dados</title>
+    <link>https://sergiodefaria.github.io/05-tipos-de-dados/</link>
+    <pubDate>Wed, 05 Jul 2023 23:23:54 &#43;0100</pubDate><author>
+        <name>S. Henrique de Faria</name>
+    </author><guid>https://sergiodefaria.github.io/05-tipos-de-dados/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/05-tipos-de-dados/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>Tipos de DadosExistem vários tipos de dados básicos predefinidos no Sage X3, como L (inteiro longo), D (Data), A (alfanumérico). Além disso, existe um conjunto de tipos &ldquo;fortes&rdquo; construído com base em tipos fracos e em definições de objeto. Por exemplo, um campo do tipo BPC (Cliente) ou SOH (Encomendas de Vendas) pode ser definido, caso em que estará em conformidade com os parâmetros e formatos definidos para esses objetos.]]></description>
+</item><item>
     <title>Códigos de atividade</title>
     <link>https://sergiodefaria.github.io/04-codigos-de-atividade/</link>
     <pubDate>Tue, 04 Jul 2023 23:23:54 &#43;0100</pubDate><author>

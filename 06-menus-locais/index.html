@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Menus Locais - Aferir - Tecnologias</title><meta name="Description" content="O meu blog sobre tecnologia e informática"><meta property="og:title" content="Menus Locais" />
+<meta property="og:description" content="Menus locais (Mensagens aplicativo)Os menus locais definem listas de texto que aparecem como menus drop-down, botões de opção e caixas de seleção nos ecrãs do Sage X3. Os menus locais são também usados para mensagens em caixas de informações, erros, avisos, etc. A seguir, tem um exemplo de um menu local em forma de menu suspenso (menu drop-downn) definido na função Mensagens de menus locais (TXT) (sob Tabelas no bloco Desenvolvimento &gt; Dados e parâmetros) e o resultado disso no campo Classe ABC na função Sites dos Produtos (no bloco Dados comuns &gt; Categorias de produtos)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sergiodefaria.github.io/06-menus-locais/" /><meta property="og:image" content="https://sergiodefaria.github.io/06-menus-locais/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-06T23:23:54+01:00" />
+<meta property="article:modified_time" content="2023-07-06T23:23:54+01:00" /><meta property="og:site_name" content="Aferir.pt" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sergiodefaria.github.io/06-menus-locais/featured-image.jpg"/>
+<meta name="twitter:title" content="Menus Locais"/>
+<meta name="twitter:description" content="Menus locais (Mensagens aplicativo)Os menus locais definem listas de texto que aparecem como menus drop-down, botões de opção e caixas de seleção nos ecrãs do Sage X3. Os menus locais são também usados para mensagens em caixas de informações, erros, avisos, etc. A seguir, tem um exemplo de um menu local em forma de menu suspenso (menu drop-downn) definido na função Mensagens de menus locais (TXT) (sob Tabelas no bloco Desenvolvimento &gt; Dados e parâmetros) e o resultado disso no campo Classe ABC na função Sites dos Produtos (no bloco Dados comuns &gt; Categorias de produtos)."/>
+<meta name="application-name" content="Aferir tecnologia">
+<meta name="apple-mobile-web-app-title" content="Aferir tecnologia">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="https://sergiodefaria.github.io/06-menus-locais/" /><link rel="prev" href="https://sergiodefaria.github.io/05-tipos-de-dados/" /><link rel="next" href="https://sergiodefaria.github.io/07-tabelas-e-vistas/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Menus Locais",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sergiodefaria.github.io\/06-menus-locais\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/sergiodefaria.github.io\/06-menus-locais\/featured-image.jpg",
+                            "width":  1297 ,
+                            "height":  773 
+                        }],"genre": "posts","keywords": "Sage X3, Programação","wordcount":  716 ,
+        "url": "https:\/\/sergiodefaria.github.io\/06-menus-locais\/","datePublished": "2023-07-06T23:23:54+01:00","dateModified": "2023-07-06T23:23:54+01:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "S. Henrique de Faria"
+            },"description": ""
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="desktop-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Blog </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Aferir - Tecnologias"><img
+        class="logo"
+        loading="lazy"
+        src="/images/aferir_logo.png"
+        srcset="/images/aferir_logo.png, /images/aferir_logo.png 1.5x, /images/aferir_logo.png 2x"
+        sizes="auto"
+        alt="/images/aferir_logo.png"
+        title="/images/aferir_logo.png" ><span class="header-title-pre"><i></span><span id="mobile-header-typeit" class="typeit"></span><span class="header-title-post"></i></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Blog</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content always-active" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#na-base-de-dados">Na base de dados:</a></li>
+    <li><a href="#tabelas-e-campos-de-ecrã">Tabelas e campos de ecrã</a></li>
+    <li><a href="#a-função-mess">A função mess()</a></li>
+    <li><a href="#utilização-de-menus-locais">Utilização de Menus Locais</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Menus Locais</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="/" title="Author" rel=" author" class="author">S. Henrique de Faria</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/sage-x3-programa%C3%A7%C3%A3o/"><i class="far fa-folder fa-fw"></i>Sage X3 - Programação</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="06/07/2023">06/07/2023</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="06/07/2023">06/07/2023</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;716 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/06-menus-locais/featured-image.jpg"
+        srcset="/06-menus-locais/featured-image.jpg, /06-menus-locais/featured-image.jpg 1.5x, /06-menus-locais/featured-image.jpg 2x"
+        sizes="auto"
+        alt="/06-menus-locais/featured-image.jpg"
+        title="/06-menus-locais/featured-image.jpg" height="773"   width="1297" ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#na-base-de-dados">Na base de dados:</a></li>
+    <li><a href="#tabelas-e-campos-de-ecrã">Tabelas e campos de ecrã</a></li>
+    <li><a href="#a-função-mess">A função mess()</a></li>
+    <li><a href="#utilização-de-menus-locais">Utilização de Menus Locais</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="menus-locais-mensagens-aplicativo" class="headerLink">
+    <a href="#menus-locais-mensagens-aplicativo" class="header-mark"></a>Menus locais (Mensagens aplicativo)</h1><p>Os menus locais definem listas de texto que aparecem como menus drop-down, botões de opção e caixas de seleção nos ecrãs do Sage X3. Os menus locais são também usados para mensagens em caixas de informações, erros, avisos, etc. A seguir, tem um exemplo de um menu local em forma de menu suspenso (menu drop-downn) definido na função Mensagens de menus locais (TXT) (sob Tabelas no bloco Desenvolvimento &gt; Dados e parâmetros) e o resultado disso no campo Classe ABC na função Sites dos Produtos (no bloco Dados comuns &gt; Categorias de produtos).</p>
+
+
+
+<img src="/images/localmenus_huea6391122369863d34f87df56b0813bf_151314_1000x0_resize_q75_box.jpg" alt="" >
+<p><strong>Organização dos menus locais</strong></p>
+<ul>
+<li>Os menus locais são agrupados em capítulos identificados por números.</li>
+<li>Cada texto num capítulo é identificado por um número sequencial a partir de 1.</li>
+<li>Cada menu local pode conter até 123 itens.</li>
+<li>Os capítulos de 1 a 999 são para desenvolvimento standard.</li>
+<li>Os capítulos de 1000 a 1999 e de 5200 a 5999 são reservados para desenvolvimentos verticais.</li>
+<li>Os capítulos de 4000 a 4999 são para complementos (add-ons).</li>
+<li>Os capítulos de 6000 a 6999 são para desenvolvimentos específicos (6000 a 6499 para Sage e 6500 a 6999 para clientes).</li>
+</ul>
+<p>Observação: Essas convenções de numeração também estão disponíveis no sistema de Ajuda e são as mesmas convenções de numeração usadas para as tabelas diversas.</p>
+<h2 id="na-base-de-dados" class="headerLink">
+    <a href="#na-base-de-dados" class="header-mark"></a>Na base de dados:</h2><ul>
+<li>Os menus locais são armazenados em duas tabelas: <code>APLSTD</code> para mensagens (mensagens de informação, aviso e erro) e <code>AMENLOC</code> para menus locais (listas suspensas, etc.).</li>
+<li>Quando um campo contém um item de menu local, o número do texto é armazenado na base de dados em vez do próprio texto. O menu local mais utilizado é o capítulo 1, o menu Não/Sim.
+<ul>
+<li>Contém duas opções, os textos: Não (item 1) e Sim (item 2).</li>
+<li>Está associado a todas as caixas de seleção e a um número de campos normais.</li>
+<li>Como resultado, o valor Não nos ecrãs e tabelas do Sage X3 é 1, e o valor Sim é 2.</li>
+</ul>
+</li>
+</ul>
+<h2 id="tabelas-e-campos-de-ecrã" class="headerLink">
+    <a href="#tabelas-e-campos-de-ecr%c3%a3" class="header-mark"></a>Tabelas e campos de ecrã</h2><ul>
+<li>Os campos de tabela e de ecrã na base de dados podem estar associados a um menu local (tipo de dados M ou MM).
+Nesse caso, apenas o número do texto é armazenado na base de dados, não o próprio texto. Isso significa que:
+<ul>
+<li>O texto é facilmente traduzível e pode ser visualizado em qualquer um dos idiomas disponíveis.</li>
+<li>Quando o texto é modificado, nenhuma modificação de dados é necessária nos campos relacionados.</li>
+</ul>
+</li>
+</ul>
+<h2 id="a-função-mess" class="headerLink">
+    <a href="#a-fun%c3%a7%c3%a3o-mess" class="header-mark"></a>A função mess()</h2><ul>
+<li>
+<p>A função mess() retorna um texto de menu local. Ela é amplamente utilizada para exibir mensagens no software Sage X3. As mensagens nunca são escritas diretamente no código, mas sim criadas como menus locais e usadas por meio dessa função. Isso permite que todas as mensagens do aplicativo sejam traduzidas sem nenhuma alteração no código:</p>
+</li>
+<li>
+<p>mess(&ldquo;Texto&rdquo;, &ldquo;Capítulo&rdquo;, 1) retorna o número do texto &ldquo;Texto&rdquo; no capítulo &ldquo;Capítulo&rdquo;.
+Exemplo: mess(291, 192, 1) retorna &ldquo;A loan order cannot be inter-site!&rdquo; quando conectado em inglês, &ldquo;Une commande de prêt ne peut pas être inter-sites !&rdquo; quando conectado em francês, e &ldquo;Encomenda de empréstimo n/pode ser inter-estab. !&rdquo; em português.</p>
+</li>
+</ul>
+<h2 id="utilização-de-menus-locais" class="headerLink">
+    <a href="#utiliza%c3%a7%c3%a3o-de-menus-locais" class="header-mark"></a>Utilização de Menus Locais</h2><ul>
+<li>O tipo de dados M identifica um Menu Local, juntamente com o número do capítulo:
+<ul>
+<li>Campos com esse tipo de dados apresentarão uma escolha de valores de texto.
+<ul>
+<li>Na forma de uma lista suspensa (drop-down).</li>
+<li>Na forma de botões de rádio (Radio buttons).</li>
+<li>Como uma caixa de seleção para o menu Sim/Não (Capítulo 1).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>O tipo de dados MM identifica um Menu Local modificável pelo usuário:</li>
+<li>Num único capítulo, os textos são identificados por números na faixa de 1 a 123.</li>
+<li>Menus locais usados como mensagens do aplicativo podem ser acedidos usando a instrução mess().
+<ul>
+<li>mess(1, 110, 1) retorna o texto 1 do capítulo 110 no idioma da conexão.</li>
+</ul>
+</li>
+<li>Menus locais específicos podem ser criados nos capítulos designados.
+<ul>
+<li>Eles podem ser identificados usando a opção para mostrar os intervalos reservados.</li>
+</ul>
+</li>
+<li>Menus Locais vs. Mensagens:
+<ul>
+<li>Se um menu local não é explicitamente marcado como &ldquo;menu local&rdquo;, então é uma mensagem.</li>
+<li>Os textos são identificados por números na faixa de 1 a 9999.</li>
+<li>Os valores não podem ser alterados pelos utilizadores.</li>
+<li>Não são transferidos para o computador do usuário (cliente-servidor).</li>
+<li>Costumam ser usados para lidar com mensagens no código-fonte (mensagens de erro, etc.).</li>
+<li>São também traduzíveis.</li>
+<li>São também armazenados na tabela APLSTD.</li>
+</ul>
+</li>
+</ul>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 06/07/2023</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://sergiodefaria.github.io/06-menus-locais/" data-title="Menus Locais" data-via="xxxx" data-hashtags="Sage X3,Programação"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://sergiodefaria.github.io/06-menus-locais/" data-hashtag="Sage X3"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Hacker News" data-sharer="hackernews" data-url="https://sergiodefaria.github.io/06-menus-locais/" data-title="Menus Locais"><span class="fab fa-hacker-news fa-fw"></span></button><button title="Share on Line" data-sharer="line" data-url="https://sergiodefaria.github.io/06-menus-locais/" data-title="Menus Locais"><span data-svg-src="/lib/simple-icons/icons/line.min.svg"></span></button><button title="Share on 微博" data-sharer="weibo" data-url="https://sergiodefaria.github.io/06-menus-locais/" data-title="Menus Locais"><span class="fab fa-weibo fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/sage-x3/">Sage X3</a>,&nbsp;<a href="/tags/programa%C3%A7%C3%A3o/">Programação</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/05-tipos-de-dados/" class="prev" rel="prev" title="Tipos de dados"><i class="fas fa-angle-left fa-fw"></i>Tipos de dados</a>
+            <a href="/07-tabelas-e-vistas/" class="next" rel="next" title="Tabelas e Vistas">Tabelas e Vistas<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">S. Henrique de Faria</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div id="cookieconsent-container"></div><div class="assets"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"desktop-header-typeit":"tecnologia","mobile-header-typeit":"tecnologia"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/cookieconsent.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>
